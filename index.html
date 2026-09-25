@@ -1,0 +1,3056 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#EEF3FA">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="آرتیوا؛ تیمی خلاق از طراحان گرافیک، تدوینگران، متخصصان هوش مصنوعی و طراحان مذهبی.">
+  <title>آرتیوا | تیم خلاق طراحی، تدوین</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233D95FF'/%3E%3Cstop offset='1' stop-color='%230046B8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='34' font-weight='700' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="icon" href="assets/logo.webp" type="image/webp">
+  <link rel="apple-touch-icon" href="assets/logo.webp">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="آرتیوا">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:title" content="آرتیوا | تیم خلاق طراحی، تدوین و هوش مصنوعی">
+  <meta property="og:description" content="آرتیوا؛ تیمی خلاق از طراحان گرافیک، تدوینگران، متخصصان هوش مصنوعی و طراحان مذهبی.">
+  <meta property="og:image" content="assets/logo.webp">
+  <meta property="og:site_name" content="ARTIVA Team">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="آرتیوا | تیم خلاق طراحی، تدوین و هوش مصنوعی">
+  <meta name="twitter:description" content="آرتیوا؛ تیمی خلاق از طراحان گرافیک، تدوینگران، متخصصان هوش مصنوعی و طراحان مذهبی.">
+  <meta name="twitter:image" content="assets/logo.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "آرتیوا | ARTIVA",
+    "alternateName": "ARTIVA Team",
+    "description": "تیم خلاق طراحی گرافیک، تدوین، هوش مصنوعی و طراحی مذهبی.",
+    "url": "./",
+    "logo": "assets/logo.webp",
+    "sameAs": ["https://eitaa.com/nova_graphii"]
+  }
+  </script>
+
+  <style>
+    /* =========================================================
+       ARTIVA — Liquid Glass Light UI
+       ========================================================= */
+
+    @font-face {
+      font-family: "ArtivaFont";
+      src: url("ddd2.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "ArtivaFont";
+      src: url("ddd1.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      color-scheme: light;
+
+      --bg: #EEF3FA;
+      --paper: #FFFFFF;
+      --text: #0A1526;
+      --text-2: #4C5867;
+      --text-3: #8A94A4;
+      --sep: rgba(10, 21, 38, 0.09);
+      --sep-strong: rgba(10, 21, 38, 0.14);
+      --fill: rgba(116, 128, 148, 0.12);
+      --fill-2: rgba(116, 128, 148, 0.07);
+
+      --brand: #0062E6;
+      --brand-bright: #0A84FF;
+      --brand-deep: #0040A8;
+      --brand-sky: #37B6FF;
+      --brand-ink: #00357F;
+      --brand-tint: rgba(0, 98, 230, 0.10);
+      --brand-tint-2: rgba(0, 98, 230, 0.16);
+      --grad-brand: linear-gradient(180deg, #3D95FF 0%, #0A6EF7 48%, #0050C4 100%);
+      --grad-brand-soft: linear-gradient(140deg, rgba(61, 149, 255, 0.16), rgba(0, 98, 230, 0.06) 55%, rgba(55, 182, 255, 0.12));
+      --grad-text: linear-gradient(96deg, #0040A8 0%, #0A6EF7 46%, #00A3E0 100%);
+
+      --glass: rgba(255, 255, 255, 0.62);
+      --glass-2: rgba(255, 255, 255, 0.78);
+      --glass-3: rgba(255, 255, 255, 0.9);
+      --glass-edge: rgba(255, 255, 255, 0.92);
+      --blur-1: blur(16px) saturate(170%);
+      --blur-2: blur(26px) saturate(185%);
+      --blur-3: blur(40px) saturate(190%);
+
+      --sh-1: 0 1px 2px rgba(9, 26, 64, 0.05), 0 6px 16px rgba(9, 26, 64, 0.06);
+      --sh-2: 0 1px 2px rgba(9, 26, 64, 0.05), 0 12px 30px rgba(9, 26, 64, 0.09);
+      --sh-3: 0 2px 6px rgba(9, 26, 64, 0.06), 0 28px 60px rgba(9, 26, 64, 0.14);
+      --sh-float: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 10px 30px rgba(9, 26, 64, 0.10), 0 2px 8px rgba(9, 26, 64, 0.05);
+      --sh-brand: 0 1px 0 rgba(255, 255, 255, 0.45) inset, 0 10px 24px rgba(0, 80, 196, 0.32), 0 2px 6px rgba(0, 53, 127, 0.22);
+
+      --r-xs: 10px;
+      --r-sm: 14px;
+      --r-md: 18px;
+      --r-lg: 24px;
+      --r-xl: 30px;
+      --r-2xl: 38px;
+      --r-pill: 999px;
+
+      --ease: cubic-bezier(.22, .68, .24, 1);
+      --spring: cubic-bezier(.34, 1.4, .4, 1);
+      --spring-soft: cubic-bezier(.3, 1.12, .38, 1);
+      --dur: .34s;
+
+      --header-h: 68px;
+      --dock-h: 78px;
+      --safe-b: env(safe-area-inset-bottom, 0px);
+      --safe-t: env(safe-area-inset-top, 0px);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      scroll-padding-top: 128px;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100svh;
+      color: var(--text);
+      font-family: "ArtivaFont", "Vazirmatn", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      font-weight: 500;
+      font-size: 15.5px;
+      line-height: 1.85;
+      overflow-x: hidden;
+      background: var(--bg);
+      padding-top: var(--safe-t);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: "ss01";
+    }
+
+    body.is-locked { overflow: hidden; }
+
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea, select { font: inherit; color: inherit; }
+    button { border: 0; background: none; padding: 0; cursor: pointer; }
+    img, video { max-width: 100%; display: block; }
+    h1, h2, h3, h4, p { margin: 0; }
+    ul { margin: 0; padding: 0; list-style: none; }
+
+    ::selection { background: rgba(0, 98, 230, 0.18); color: var(--brand-ink); }
+
+    :focus-visible {
+      outline: 2.5px solid var(--brand);
+      outline-offset: 3px;
+      border-radius: 12px;
+    }
+
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(10, 40, 90, 0.18);
+      border-radius: 999px;
+      border: 3px solid transparent;
+      background-clip: padding-box;
+    }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(0, 98, 230, 0.4); background-clip: padding-box; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 10px; inset-inline-start: 50%;
+      transform: translate(-50%, -160%);
+      z-index: 9000;
+      padding: 10px 18px;
+      border-radius: var(--r-pill);
+      background: var(--brand);
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      transition: transform .3s var(--spring);
+    }
+    .skip-link:focus { transform: translate(-50%, 0); }
+
+    .icon {
+      width: 1.24em; height: 1.24em;
+      display: inline-block; flex: 0 0 auto;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round;
+      vertical-align: -0.2em;
+    }
+    .icon.sm { font-size: 0.86em; }
+    .icon.lg { font-size: 1.5em; }
+    .icon.flip { transform: scaleX(-1); }
+
+    .icon-tile {
+      width: 46px; height: 46px;
+      display: grid; place-items: center;
+      border-radius: 15px;
+      font-size: 21px;
+      color: #fff;
+      background: var(--grad-brand);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 6px 16px rgba(0, 80, 196, 0.3);
+      flex: 0 0 auto;
+    }
+    .icon-tile.soft {
+      color: var(--brand);
+      background: linear-gradient(160deg, rgba(61, 149, 255, 0.2), rgba(0, 98, 230, 0.1));
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.85) inset;
+      border: 1px solid rgba(0, 98, 230, 0.12);
+    }
+
+    .container { width: min(1180px, calc(100% - 32px)); margin-inline: auto; }
+    .app-shell { position: relative; z-index: 1; padding-bottom: calc(var(--dock-h) + 46px + var(--safe-b)); }
+    header, main, footer { position: relative; z-index: 1; }
+
+    .glass {
+      position: relative;
+      background: linear-gradient(158deg, var(--glass-2), var(--glass) 60%, rgba(255, 255, 255, 0.5));
+      -webkit-backdrop-filter: var(--blur-1);
+      backdrop-filter: var(--blur-1);
+      border: 1px solid var(--glass-edge);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.95) inset, 0 -1px 0 rgba(255, 255, 255, 0.4) inset, var(--sh-1);
+    }
+
+    .glass::after,
+    .sheen {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .45s var(--ease);
+      background:
+        radial-gradient(280px 170px at var(--mx, 50%) var(--my, 0%), rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0) 68%),
+        radial-gradient(420px 240px at calc(100% - var(--mx, 50%)) 120%, rgba(61, 149, 255, 0.18), rgba(255, 255, 255, 0) 70%);
+      mix-blend-mode: soft-light;
+    }
+    .glass:hover::after { opacity: 1; }
+    .glass > * { position: relative; z-index: 1; }
+
+    @supports not ((backdrop-filter: blur(2px)) or (-webkit-backdrop-filter: blur(2px))) {
+      .glass { background: rgba(255, 255, 255, 0.96); }
+    }
+
+    .bg-fx {
+      position: fixed; inset: 0; z-index: 0;
+      overflow: hidden; pointer-events: none;
+      background:
+        radial-gradient(1000px 620px at 88% -12%, rgba(10, 132, 255, 0.18), transparent 62%),
+        radial-gradient(760px 520px at 2% 8%, rgba(0, 190, 235, 0.12), transparent 60%),
+        radial-gradient(1100px 700px at 45% 112%, rgba(0, 98, 230, 0.10), transparent 62%),
+        linear-gradient(178deg, #FFFFFF 0%, #F5F8FC 42%, #EAF0F9 100%);
+    }
+
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(78px);
+      opacity: .5;
+      animation: orbDrift 26s var(--ease) infinite alternate;
+      will-change: transform;
+    }
+    .orb-1 { width: 460px; height: 460px; top: -170px; inset-inline-start: -110px; background: radial-gradient(circle, rgba(61, 149, 255, .55), transparent 66%); }
+    .orb-2 { width: 400px; height: 400px; top: 30%; inset-inline-end: -150px; background: radial-gradient(circle, rgba(0, 190, 235, .38), transparent 66%); animation-delay: -8s; }
+    .orb-3 { width: 520px; height: 520px; bottom: -230px; inset-inline-start: 26%; background: radial-gradient(circle, rgba(0, 98, 230, .26), transparent 66%); animation-delay: -16s; }
+
+    @keyframes orbDrift {
+      from { transform: translate3d(0, 0, 0) scale(1); }
+      to { transform: translate3d(50px, 40px, 0) scale(1.14); }
+    }
+
+    .bg-grain {
+      position: absolute; inset: 0;
+      opacity: .3;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E");
+    }
+
+    .bg-lines {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(10, 60, 140, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10, 60, 140, 0.045) 1px, transparent 1px);
+      background-size: 64px 64px;
+      -webkit-mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 10%, transparent 74%);
+      mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, #000 10%, transparent 74%);
+    }
+
+    .splash {
+      position: fixed; inset: 0; z-index: 8000;
+      display: grid; place-items: center;
+      background:
+        radial-gradient(720px 460px at 50% 32%, rgba(61, 149, 255, 0.16), transparent 62%),
+        linear-gradient(178deg, #FFFFFF, #EAF0F9);
+      transition: opacity .5s var(--ease), visibility .5s var(--ease);
+    }
+    .splash.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+    .splash-card {
+      display: grid; justify-items: center; gap: 14px;
+      transform: translateY(10px) scale(.96);
+      animation: splashIn .7s var(--spring) forwards;
+    }
+    @keyframes splashIn { to { transform: translateY(0) scale(1); } }
+
+    .splash-logo .logo-frame { width: 84px; height: 84px; border-radius: 24px; }
+    .splash-logo {
+      width: 96px; height: 96px; border-radius: 28px;
+      display: grid; place-items: center;
+      background: linear-gradient(155deg, rgba(255, 255, 255, .95), rgba(255, 255, 255, .7));
+      border: 1px solid #fff;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 1) inset, 0 18px 44px rgba(0, 80, 196, 0.22);
+      animation: splashPulse 2.4s ease-in-out infinite;
+    }
+    @keyframes splashPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(10, 132, 255, .28), 0 18px 44px rgba(0, 80, 196, .2); }
+      50% { box-shadow: 0 0 0 18px rgba(10, 132, 255, 0), 0 18px 44px rgba(0, 80, 196, .28); }
+    }
+
+    .splash-title {
+      font-size: 25px; font-weight: 700; letter-spacing: .16em; direction: ltr;
+      background: var(--grad-text);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .splash-subtitle { color: var(--text-2); font-size: 12.5px; }
+
+    .splash-bar {
+      width: 170px; height: 4px; border-radius: var(--r-pill);
+      background: var(--fill); overflow: hidden; margin-top: 4px;
+    }
+    .splash-bar::after {
+      content: ""; display: block; height: 100%; width: 40%;
+      border-radius: var(--r-pill); background: var(--grad-brand);
+      animation: splashLoad 1.15s ease-in-out infinite;
+    }
+    @keyframes splashLoad { from { transform: translateX(140%); } to { transform: translateX(-280%); } }
+
+    .logo-frame, .media-box {
+      position: relative; overflow: hidden;
+      display: grid; place-items: center;
+      background: linear-gradient(158deg, rgba(255, 255, 255, .96), rgba(236, 243, 252, .9));
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, var(--sh-1);
+    }
+
+    .logo-frame { width: 42px; height: 42px; border-radius: 13px; flex: 0 0 auto; }
+    .logo-img, .media-box img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: opacity .3s ease, transform .6s var(--ease);
+    }
+    .logo-img { object-fit: contain; padding: 6px; }
+
+    .logo-fallback, .media-fallback {
+      position: absolute; inset: 0;
+      display: none; place-items: center; align-content: center;
+      gap: 6px; padding: 14px; text-align: center;
+      color: var(--text-3);
+      background: linear-gradient(158deg, #F7FAFF, #E7EFFB);
+      font-size: 11.5px; line-height: 1.7;
+    }
+    .logo-fallback {
+      color: var(--brand); font-size: 8px; font-weight: 700;
+      letter-spacing: .04em; direction: ltr; background: linear-gradient(158deg, #EAF2FF, #DCE9FF);
+    }
+    .media-fallback .icon { color: var(--brand); font-size: 26px; opacity: .8; }
+
+    .media-box::before {
+      content: ""; position: absolute; inset: 0; z-index: 2;
+      background: linear-gradient(100deg, transparent 20%, rgba(255, 255, 255, .55) 45%, transparent 70%);
+      transform: translateX(-120%);
+      animation: shimmer 2.4s ease-in-out infinite;
+    }
+    .media-box.is-loaded::before, .media-box.is-error::before { animation: none; opacity: 0; }
+    @keyframes shimmer { to { transform: translateX(120%); } }
+
+    .logo-frame.is-error .logo-img, .media-box.is-error img { opacity: 0; }
+    .logo-frame.is-error .logo-fallback, .media-box.is-error .media-fallback { display: grid; }
+
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 12px 22px;
+      border-radius: var(--r-pill);
+      border: 1px solid transparent;
+      font-weight: 700; font-size: 14px; line-height: 1.5;
+      white-space: nowrap;
+      transition: transform .22s var(--spring-soft), box-shadow .28s var(--ease), background .25s var(--ease), color .25s var(--ease), opacity .2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button:active { transform: translateY(0) scale(.965); transition-duration: .1s; }
+
+    .button.primary {
+      color: #fff;
+      background: var(--grad-brand);
+      box-shadow: var(--sh-brand);
+    }
+    .button.primary:hover { box-shadow: 0 1px 0 rgba(255, 255, 255, .45) inset, 0 16px 34px rgba(0, 80, 196, .4), 0 3px 8px rgba(0, 53, 127, .25); }
+
+    .button.glass-btn {
+      color: var(--brand);
+      background: linear-gradient(160deg, rgba(255, 255, 255, .86), rgba(255, 255, 255, .62));
+      -webkit-backdrop-filter: var(--blur-1); backdrop-filter: var(--blur-1);
+      border-color: rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, 0 6px 18px rgba(9, 26, 64, .08);
+    }
+    .button.glass-btn:hover { background: linear-gradient(160deg, #fff, rgba(255, 255, 255, .8)); }
+
+    .button.tint {
+      color: var(--brand);
+      background: var(--brand-tint);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset;
+    }
+    .button.tint:hover { background: var(--brand-tint-2); }
+
+    .button.sm { padding: 9px 16px; font-size: 13px; }
+    .button.block { width: 100%; }
+
+    .button[disabled], .button[aria-disabled="true"] {
+      pointer-events: none;
+      color: var(--text-3);
+      background: var(--fill-2);
+      box-shadow: none;
+      opacity: .8;
+    }
+
+    .icon-button {
+      width: 42px; height: 42px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      color: var(--brand);
+      background: linear-gradient(160deg, rgba(255, 255, 255, .88), rgba(255, 255, 255, .6));
+      -webkit-backdrop-filter: var(--blur-1); backdrop-filter: var(--blur-1);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, 0 4px 14px rgba(9, 26, 64, .08);
+      font-size: 17px;
+      transition: transform .24s var(--spring-soft), background .25s, color .25s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .icon-button:hover { transform: translateY(-2px); background: #fff; }
+    .icon-button:active { transform: scale(.92); }
+    .icon-button.solid { color: #fff; background: var(--grad-brand); border-color: transparent; box-shadow: var(--sh-brand); }
+
+    .grad-text {
+      background: var(--grad-text);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .num { font-variant-numeric: tabular-nums; direction: ltr; unicode-bidi: isolate; }
+
+    .tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 11px; border-radius: var(--r-pill);
+      font-size: 11.5px; font-weight: 600; line-height: 1.4;
+      color: var(--brand);
+      background: var(--brand-tint);
+      border: 1px solid rgba(0, 98, 230, 0.12);
+      white-space: nowrap;
+    }
+    .tag.neutral { color: var(--text-2); background: var(--fill-2); border-color: var(--sep); }
+
+    .empty-state {
+      display: grid; place-items: center; gap: 10px;
+      padding: 34px 20px; text-align: center;
+      color: var(--text-3); font-size: 13.5px;
+      background: linear-gradient(160deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .45));
+      border: 1px dashed var(--sep-strong);
+      border-radius: var(--r-lg);
+    }
+    .empty-state .icon { font-size: 26px; color: var(--brand); opacity: .55; }
+
+    .app-header {
+      position: fixed;
+      top: calc(10px + var(--safe-t));
+      inset-inline: 0;
+      z-index: 70;
+      display: flex; justify-content: center;
+      padding-inline: 12px;
+      pointer-events: none;
+    }
+    .app-header > * { pointer-events: auto; }
+
+    .header-inner {
+      position: relative;
+      width: min(1180px, 100%);
+      display: flex; align-items: center; gap: 12px;
+      padding: 9px 12px;
+      border-radius: var(--r-xl);
+      transition: padding .4s var(--ease), box-shadow .4s var(--ease), border-radius .4s var(--ease), transform .4s var(--ease);
+    }
+    .app-header.is-scrolled .header-inner {
+      padding: 7px 10px;
+      border-radius: var(--r-lg);
+      box-shadow: 0 1px 0 #fff inset, 0 14px 40px rgba(9, 26, 64, 0.14), 0 2px 8px rgba(9, 26, 64, .07);
+    }
+
+    .brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .brand .logo-frame { width: 38px; height: 38px; border-radius: 12px; }
+    .brand-copy { display: grid; line-height: 1.25; min-width: 0; }
+    .brand-copy strong { font-size: 15px; font-weight: 700; letter-spacing: -.01em; }
+    .brand-copy span {
+      font-size: 10px; color: var(--text-3); direction: ltr; letter-spacing: .12em;
+      text-transform: uppercase;
+      opacity: 0; max-height: 0; transform: translateY(-4px);
+      transition: opacity .35s var(--ease), max-height .35s var(--ease), transform .35s var(--ease);
+    }
+    .app-header.is-scrolled .brand-copy span { opacity: 1; max-height: 18px; transform: none; }
+
+    .header-nav {
+      display: flex; align-items: center; gap: 2px;
+      margin-inline-start: auto;
+      padding: 4px;
+      border-radius: var(--r-pill);
+      background: var(--fill-2);
+    }
+    .header-nav a {
+      padding: 7px 14px; border-radius: var(--r-pill);
+      font-size: 13px; font-weight: 600; color: var(--text-2);
+      transition: color .25s, background .25s, transform .25s var(--spring-soft);
+    }
+    .header-nav a:hover { color: var(--brand); background: rgba(255, 255, 255, .7); }
+    .header-nav a.is-active {
+      color: var(--brand);
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(9, 26, 64, .12), 0 0 0 .5px rgba(9, 26, 64, .04);
+    }
+
+    .header-actions { display: flex; align-items: center; gap: 8px; margin-inline-start: auto; }
+    .header-nav + .header-actions { margin-inline-start: 10px; }
+
+    .kbd-hint {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 6px; border-radius: 6px;
+      background: var(--fill); color: var(--text-3);
+      font-size: 10px; font-weight: 700; direction: ltr;
+      margin-inline-start: 2px;
+    }
+
+    .header-progress {
+      position: absolute; bottom: 5px; inset-inline: 22px; height: 2px;
+      border-radius: var(--r-pill); overflow: hidden;
+      background: transparent; pointer-events: none;
+    }
+    .header-progress i {
+      display: block; height: 100%; width: 0%;
+      border-radius: var(--r-pill);
+      background: var(--grad-brand);
+      box-shadow: 0 0 8px rgba(10, 132, 255, .6);
+      transition: width .12s linear;
+    }
+
+    .hero { padding: calc(var(--header-h) + 74px) 0 30px; position: relative; }
+    .hero-inner {
+      display: grid; justify-items: center; text-align: center; gap: 18px;
+      position: relative;
+    }
+
+    .hero-stage {
+      position: relative;
+      width: 168px; height: 168px;
+      display: grid; place-items: center;
+      margin-bottom: 6px;
+    }
+    .hero-stage::before {
+      content: ""; position: absolute; inset: 8px; border-radius: 50%;
+      background: conic-gradient(from 0deg, rgba(61, 149, 255, .55), rgba(0, 190, 235, .25), rgba(0, 98, 230, .5), rgba(61, 149, 255, .55));
+      filter: blur(22px); opacity: .55;
+      animation: spin 14s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .hero-logo {
+      width: 108px; height: 108px; border-radius: 32px;
+      position: relative; z-index: 1;
+      background: linear-gradient(158deg, rgba(255, 255, 255, .96), rgba(255, 255, 255, .74));
+      box-shadow: 0 1px 0 #fff inset, 0 26px 56px rgba(0, 80, 196, .24), 0 6px 16px rgba(9, 26, 64, .08);
+      animation: floaty 6s ease-in-out infinite;
+      transition: transform .35s var(--ease);
+    }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(-1.2deg); }
+    }
+
+    .hero-chip-float {
+      position: absolute; z-index: 2;
+      width: 44px; height: 44px; border-radius: 15px;
+      display: grid; place-items: center;
+      color: var(--brand); font-size: 19px;
+      background: linear-gradient(160deg, rgba(255, 255, 255, .95), rgba(255, 255, 255, .72));
+      -webkit-backdrop-filter: var(--blur-1); backdrop-filter: var(--blur-1);
+      border: 1px solid #fff;
+      box-shadow: 0 1px 0 #fff inset, 0 10px 26px rgba(9, 26, 64, .12);
+      animation: floaty 7s ease-in-out infinite;
+    }
+    .hero-chip-float.c1 { top: 2px; inset-inline-start: -10px; animation-delay: -1.5s; }
+    .hero-chip-float.c2 { bottom: 8px; inset-inline-end: -14px; animation-delay: -3.4s; }
+    .hero-chip-float.c3 { top: 44%; inset-inline-end: -22px; animation-delay: -5s; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 7px 15px; border-radius: var(--r-pill);
+      font-size: 12px; font-weight: 700; letter-spacing: .01em;
+      color: var(--brand);
+      direction: ltr;
+      background: linear-gradient(160deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .62));
+      -webkit-backdrop-filter: var(--blur-1); backdrop-filter: var(--blur-1);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, 0 6px 18px rgba(9, 26, 64, .08);
+    }
+    .hero-badge .icon { color: var(--brand-bright); }
+
+    .hero h1 {
+      font-size: clamp(31px, 6.2vw, 58px);
+      font-weight: 700; line-height: 1.28; letter-spacing: -.02em;
+      max-width: 17ch;
+    }
+    .hero p.lead {
+      font-size: clamp(14.5px, 2.4vw, 17.5px);
+      color: var(--text-2); max-width: 62ch; line-height: 2;
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .hero-actions .button { padding: 14px 26px; font-size: 15px; }
+
+    .hero-metrics {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 0; margin-top: 6px;
+      padding: 12px 8px; border-radius: var(--r-pill);
+      background: linear-gradient(160deg, rgba(255, 255, 255, .82), rgba(255, 255, 255, .56));
+      -webkit-backdrop-filter: var(--blur-1); backdrop-filter: var(--blur-1);
+      border: 1px solid var(--glass-edge);
+      box-shadow: 0 1px 0 #fff inset, var(--sh-1);
+    }
+    .metric {
+      display: grid; justify-items: center; gap: 0;
+      padding: 4px 22px; min-width: 108px;
+    }
+    .metric + .metric { border-inline-start: 1px solid var(--sep); }
+    .metric strong {
+      font-size: 25px; font-weight: 700; line-height: 1.2; color: var(--brand);
+      font-variant-numeric: tabular-nums;
+    }
+    .metric span { font-size: 11.5px; color: var(--text-3); }
+
+    .hero-note {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 12px; color: var(--text-3);
+    }
+
+    .marquee {
+      margin-top: 26px;
+      padding: 11px 0;
+      border-radius: var(--r-pill);
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+      background: linear-gradient(160deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .45));
+      -webkit-backdrop-filter: var(--blur-1); backdrop-filter: var(--blur-1);
+      border: 1px solid var(--glass-edge);
+    }
+    .marquee-track { display: flex; width: max-content; animation: marquee 32s linear infinite; }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+    .marquee-track span {
+      display: flex; align-items: center; gap: 22px;
+      padding-inline: 22px;
+      font-size: 13px; font-weight: 600; color: var(--text-2); white-space: nowrap;
+    }
+    .marquee-track i { color: var(--brand-bright); font-style: normal; font-size: 10px; }
+    @keyframes marquee { to { transform: translateX(50%); } }
+
+    .widget-grid {
+      display: grid; gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+      margin-top: 26px;
+    }
+    .widget {
+      display: grid; gap: 10px;
+      padding: 18px;
+      border-radius: var(--r-lg);
+      text-align: start;
+      transition: transform .32s var(--spring-soft), box-shadow .32s var(--ease);
+    }
+    .widget:hover { transform: translateY(-5px); box-shadow: 0 1px 0 #fff inset, var(--sh-2); }
+    .widget h3 { font-size: 15px; font-weight: 700; }
+    .widget p { font-size: 12.5px; color: var(--text-2); line-height: 1.8; }
+    .widget-foot {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 12px; font-weight: 700; color: var(--brand);
+    }
+    .widget-foot .icon { transition: transform .3s var(--spring); }
+    .widget:hover .widget-foot .icon { transform: translateX(-4px); }
+
+    .section { padding: 62px 0; }
+    .section.compact { padding-top: 34px; }
+
+    .section-top {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      gap: 18px; flex-wrap: wrap; margin-bottom: 24px;
+    }
+    .section-kicker {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+      color: var(--brand); direction: ltr;
+      margin-bottom: 6px;
+    }
+    .section-kicker::before {
+      content: ""; width: 20px; height: 2px; border-radius: 2px;
+      background: var(--grad-brand);
+    }
+    .section-title {
+      font-size: clamp(22px, 3.6vw, 32px);
+      font-weight: 700; line-height: 1.4; letter-spacing: -.015em;
+    }
+    .section-desc { color: var(--text-2); font-size: 14px; max-width: 62ch; margin-top: 6px; }
+    .section-side { display: flex; align-items: center; gap: 10px; }
+
+    .segmented {
+      display: inline-flex; flex-wrap: wrap; gap: 3px;
+      padding: 4px;
+      border-radius: var(--r-pill);
+      background: var(--fill);
+      -webkit-backdrop-filter: var(--blur-1); backdrop-filter: var(--blur-1);
+      border: 1px solid rgba(255, 255, 255, .7);
+    }
+    .segmented button {
+      padding: 8px 16px; border-radius: var(--r-pill);
+      font-size: 13px; font-weight: 600; color: var(--text-2);
+      transition: color .25s, background .25s, transform .25s var(--spring-soft), box-shadow .25s;
+      white-space: nowrap;
+    }
+    .segmented button:hover { color: var(--brand); }
+    .segmented button.is-active {
+      color: var(--brand);
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(9, 26, 64, .14), 0 0 0 .5px rgba(9, 26, 64, .04);
+      transform: scale(1.02);
+    }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+
+    .search-panel {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 16px;
+      border-radius: var(--r-md);
+      background: var(--fill-2);
+      border: 1px solid transparent;
+      margin-bottom: 16px;
+      transition: background .3s, border-color .3s, box-shadow .3s;
+    }
+    .search-panel:focus-within {
+      background: #fff;
+      border-color: rgba(0, 98, 230, .3);
+      box-shadow: 0 0 0 4px rgba(0, 98, 230, .12);
+    }
+    .search-panel .icon { color: var(--text-3); font-size: 17px; }
+    .search-panel input {
+      flex: 1; min-width: 0; border: 0; background: none; outline: none;
+      font-size: 14.5px; font-weight: 500;
+    }
+    .search-panel input::placeholder { color: var(--text-3); }
+    .search-panel input::-webkit-search-cancel-button { -webkit-appearance: none; }
+    .search-clear { color: var(--text-3); font-size: 15px; padding: 4px; border-radius: 50%; }
+    .search-clear:hover { color: var(--brand); background: var(--fill-2); }
+
+    .category-grid {
+      display: grid; gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+    }
+    .category-card {
+      display: grid; gap: 12px;
+      padding: 20px;
+      border-radius: var(--r-lg);
+      text-align: start;
+      transition: transform .34s var(--spring-soft), box-shadow .34s var(--ease);
+    }
+    .category-card:hover { transform: translateY(-6px); box-shadow: 0 1px 0 #fff inset, var(--sh-2); }
+    .category-card:active { transform: translateY(-2px) scale(.99); }
+    .category-head { display: flex; align-items: center; gap: 12px; }
+    .category-card h3 { font-size: 16px; font-weight: 700; }
+    .category-card p { font-size: 12.5px; color: var(--text-2); line-height: 1.85; }
+    .category-foot {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 12px; margin-top: 2px;
+      border-top: 1px solid var(--sep);
+      font-size: 12px; font-weight: 700; color: var(--brand);
+    }
+    .category-foot .icon { transition: transform .3s var(--spring); }
+    .category-card:hover .category-foot .icon { transform: translateX(-4px); }
+
+    .count-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-width: 22px; height: 22px; padding: 0 7px;
+      border-radius: var(--r-pill);
+      background: var(--grad-brand); color: #fff;
+      font-size: 11.5px; font-weight: 700;
+      box-shadow: 0 3px 8px rgba(0, 80, 196, .3);
+    }
+
+    .members-grid {
+      display: grid; gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+    }
+    .member-card {
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      display: grid;
+      transition: transform .34s var(--spring-soft), box-shadow .34s var(--ease);
+    }
+    .member-card:hover { transform: translateY(-6px); box-shadow: 0 1px 0 #fff inset, var(--sh-2); }
+
+    .member-cover {
+      position: relative; height: 74px;
+      background:
+        radial-gradient(120% 130% at 12% 0%, rgba(61, 149, 255, .3), transparent 62%),
+        linear-gradient(120deg, #DCE9FF, #EAF4FF 55%, #E1F3FF);
+      border-bottom: 1px solid rgba(255, 255, 255, .8);
+      overflow: hidden;
+    }
+    .member-cover::after {
+      content: ""; position: absolute; inset: 0;
+      background-image: radial-gradient(rgba(0, 98, 230, .16) 1px, transparent 1px);
+      background-size: 14px 14px;
+      -webkit-mask-image: linear-gradient(180deg, #000, transparent);
+      mask-image: linear-gradient(180deg, #000, transparent);
+      opacity: .55;
+    }
+    .member-top { display: flex; align-items: flex-end; gap: 12px; padding: 0 18px; margin-top: -34px; position: relative; z-index: 2; }
+    .member-photo {
+      width: 76px; height: 76px; border-radius: 24px; flex: 0 0 auto;
+      border: 3px solid #fff;
+      box-shadow: 0 8px 20px rgba(9, 26, 64, .14);
+    }
+    .member-id { padding-bottom: 8px; min-width: 0; }
+    .member-id h3 { font-size: 17px; font-weight: 700; line-height: 1.35; }
+    .member-role { font-size: 12px; color: var(--text-2); }
+
+    .member-info { padding: 14px 18px 0; display: grid; gap: 10px; }
+    .member-username {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 7px 12px; border-radius: var(--r-pill);
+      font-size: 12px; font-weight: 600; color: var(--brand);
+      direction: ltr;
+      background: var(--brand-tint);
+      border: 1px solid rgba(0, 98, 230, .12);
+      transition: background .25s, transform .25s var(--spring-soft);
+      justify-self: start;
+    }
+    .member-username:hover { background: var(--brand-tint-2); transform: translateY(-1px); }
+    .member-actions { display: flex; gap: 8px; padding: 4px 18px 18px; }
+    .member-actions .button { flex: 1; padding: 11px 12px; font-size: 13px; }
+
+    .portfolio-grid {
+      display: grid; gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    }
+    .portfolio-card {
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      display: grid;
+      transition: transform .34s var(--spring-soft), box-shadow .34s var(--ease);
+    }
+    .portfolio-card:hover { transform: translateY(-6px); box-shadow: 0 1px 0 #fff inset, var(--sh-2); }
+
+    .portfolio-media { padding: 10px 10px 0; }
+    .portfolio-image { aspect-ratio: 4 / 3; border-radius: var(--r-md); }
+    .portfolio-card:hover .portfolio-image img { transform: scale(1.05); }
+
+    .portfolio-body { padding: 14px 18px 18px; display: grid; gap: 8px; }
+    .portfolio-body h3 { font-size: 15.5px; font-weight: 700; line-height: 1.5; }
+    .portfolio-body > p { font-size: 12px; color: var(--text-3); }
+    .meta-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .meta-line > span:last-child { font-size: 11.5px; color: var(--text-3); }
+    .portfolio-actions { display: flex; gap: 8px; margin-top: 4px; }
+    .portfolio-actions .button { flex: 1; }
+
+    .video-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); }
+    .video-card { border-radius: var(--r-lg); overflow: hidden; display: grid; }
+
+    .video-frame {
+      position: relative; aspect-ratio: 16 / 9;
+      background: linear-gradient(158deg, #E7EEF9, #DCE7F7);
+      overflow: hidden;
+    }
+    .video-frame video { width: 100%; height: 100%; object-fit: cover; }
+
+    .video-big-play {
+      position: absolute; inset: 0; margin: auto;
+      width: 68px; height: 68px; border-radius: 50%;
+      display: grid; place-items: center;
+      color: var(--brand); font-size: 26px;
+      background: rgba(255, 255, 255, .74);
+      -webkit-backdrop-filter: var(--blur-2); backdrop-filter: var(--blur-2);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, 0 14px 34px rgba(9, 26, 64, .2);
+      transition: transform .3s var(--spring), opacity .3s;
+    }
+    .video-big-play:hover { transform: scale(1.08); }
+    .video-frame.is-playing .video-big-play,
+    .video-frame.is-error .video-big-play { opacity: 0; pointer-events: none; }
+
+    .video-controls {
+      position: absolute; inset-inline: 10px; bottom: 10px;
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 12px;
+      border-radius: var(--r-pill);
+      background: rgba(255, 255, 255, .68);
+      -webkit-backdrop-filter: var(--blur-2); backdrop-filter: var(--blur-2);
+      border: 1px solid rgba(255, 255, 255, .9);
+      box-shadow: 0 1px 0 #fff inset, 0 8px 22px rgba(9, 26, 64, .18);
+      opacity: .92; transition: opacity .3s;
+    }
+    .video-frame:hover .video-controls { opacity: 1; }
+
+    .video-control-btn {
+      width: 32px; height: 32px; border-radius: 50%;
+      display: grid; place-items: center; flex: 0 0 auto;
+      color: var(--brand); font-size: 15px;
+      background: rgba(255, 255, 255, .8);
+      transition: transform .22s var(--spring-soft), background .22s;
+    }
+    .video-control-btn:hover { background: #fff; transform: scale(1.08); }
+
+    .time-pair { font-size: 11px; color: var(--text-2); font-variant-numeric: tabular-nums; direction: ltr; white-space: nowrap; }
+
+    input[type="range"] {
+      -webkit-appearance: none; appearance: none;
+      height: 5px; border-radius: var(--r-pill);
+      background: var(--fill); outline: none; direction: ltr;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: #fff; border: 2px solid var(--brand);
+      box-shadow: 0 2px 6px rgba(9, 26, 64, .25);
+      cursor: pointer; transition: transform .2s var(--spring-soft);
+    }
+    input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+    input[type="range"]::-moz-range-thumb {
+      width: 13px; height: 13px; border-radius: 50%;
+      background: #fff; border: 2px solid var(--brand); cursor: pointer;
+    }
+    .video-progress { flex: 1; min-width: 40px; }
+    .volume-range { width: 62px; flex: 0 0 auto; }
+
+    .video-fallback {
+      position: absolute; inset: 0; display: none;
+      place-items: center; align-content: center; gap: 8px;
+      padding: 18px; text-align: center;
+      font-size: 12px; color: var(--text-3);
+      background: linear-gradient(158deg, #F2F6FC, #E4EDF9);
+    }
+    .video-fallback .icon { font-size: 26px; color: var(--brand); opacity: .6; }
+    .video-frame.is-error .video-fallback { display: grid; }
+    .video-frame.is-error .video-controls { opacity: .5; }
+
+    .video-title-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      padding: 14px 18px 18px;
+    }
+    .video-title-row h3 { font-size: 15px; font-weight: 700; }
+    .video-title-row span { font-size: 11.5px; color: var(--text-3); }
+
+    .tutorial-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(248px, 1fr)); }
+    .tutorial-card {
+      border-radius: var(--r-lg); overflow: hidden; display: grid;
+      transition: transform .34s var(--spring-soft), box-shadow .34s var(--ease);
+    }
+    .tutorial-card:hover { transform: translateY(-6px); box-shadow: 0 1px 0 #fff inset, var(--sh-2); }
+    .tutorial-media { padding: 10px 10px 0; }
+    .tutorial-thumb { aspect-ratio: 16 / 10; border-radius: var(--r-md); }
+    .tutorial-card:hover .tutorial-thumb img { transform: scale(1.05); }
+    .tutorial-body { padding: 14px 18px 18px; display: grid; gap: 8px; }
+    .tutorial-body h3 { font-size: 15px; font-weight: 700; line-height: 1.6; }
+    .tutorial-body p { font-size: 12px; color: var(--text-3); }
+    .soon-pill {
+      display: inline-flex; align-items: center; gap: 5px; justify-self: start;
+      padding: 4px 10px; border-radius: var(--r-pill);
+      font-size: 10.5px; font-weight: 700; color: var(--text-2);
+      background: var(--fill); border: 1px solid var(--sep);
+    }
+
+    .process-card { border-radius: var(--r-xl); padding: 26px; }
+    .process-steps { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin-top: 18px; }
+    .step {
+      display: grid; gap: 8px; padding: 18px;
+      border-radius: var(--r-lg);
+      background: linear-gradient(160deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .55));
+      border: 1px solid rgba(255, 255, 255, .9);
+      box-shadow: 0 1px 0 #fff inset, var(--sh-1);
+    }
+    .step-num {
+      width: 34px; height: 34px; border-radius: 12px;
+      display: grid; place-items: center;
+      font-size: 14px; font-weight: 700; color: #fff;
+      background: var(--grad-brand);
+      box-shadow: 0 6px 14px rgba(0, 80, 196, .28);
+    }
+    .step h3 { font-size: 15px; font-weight: 700; }
+    .step p { font-size: 12.5px; color: var(--text-2); }
+
+    .order-card-main {
+      position: relative; overflow: hidden;
+      border-radius: var(--r-2xl);
+      padding: 30px;
+      display: grid; gap: 16px;
+      background:
+        radial-gradient(420px 260px at var(--mx, 80%) var(--my, 0%), rgba(255, 255, 255, .95), transparent 70%),
+        linear-gradient(158deg, rgba(255, 255, 255, .88), rgba(255, 255, 255, .62));
+      -webkit-backdrop-filter: var(--blur-2); backdrop-filter: var(--blur-2);
+      border: 1px solid #fff;
+      box-shadow: 0 1px 0 #fff inset, var(--sh-2);
+    }
+    .order-card-main::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(560px 300px at 100% 0%, rgba(61, 149, 255, .22), transparent 62%),
+        radial-gradient(420px 260px at 0% 100%, rgba(0, 190, 235, .16), transparent 60%);
+    }
+    .order-card-main > * { position: relative; z-index: 1; }
+    .order-card-main h2 { font-size: clamp(23px, 3.6vw, 31px); font-weight: 700; line-height: 1.4; }
+    .order-card-main > p { color: var(--text-2); max-width: 66ch; }
+
+    .admin-chip {
+      display: inline-flex; align-items: center; gap: 8px; justify-self: start;
+      padding: 9px 10px 9px 16px; border-radius: var(--r-pill);
+      font-size: 13px; font-weight: 700; color: var(--brand); direction: ltr;
+      background: #fff; border: 1px solid rgba(0, 98, 230, .16);
+      box-shadow: 0 4px 14px rgba(9, 26, 64, .07);
+    }
+    .admin-chip button {
+      display: grid; place-items: center;
+      width: 28px; height: 28px; border-radius: 50%;
+      color: var(--brand); background: var(--brand-tint);
+      transition: transform .22s var(--spring-soft), background .22s;
+    }
+    .admin-chip button:hover { background: var(--brand-tint-2); transform: scale(1.08); }
+
+    .order-layout { display: grid; gap: 22px; grid-template-columns: 1.05fr .95fr; align-items: start; }
+    .order-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .order-form {
+      display: grid; gap: 12px;
+      padding: 20px; border-radius: var(--r-lg);
+      background: rgba(255, 255, 255, .68);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, var(--sh-1);
+    }
+    .field { display: grid; gap: 6px; }
+    .field label { font-size: 12px; font-weight: 700; color: var(--text-2); }
+    .field input, .field select, .field textarea {
+      width: 100%; padding: 11px 14px;
+      border-radius: var(--r-sm);
+      background: #fff;
+      border: 1px solid var(--sep);
+      outline: none; font-size: 14px; font-weight: 500;
+      transition: border-color .25s, box-shadow .25s;
+    }
+    .field textarea { min-height: 88px; resize: vertical; line-height: 1.8; }
+    .field select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--text-3) 50%), linear-gradient(135deg, var(--text-3) 50%, transparent 50%); background-position: calc(0% + 16px) 52%, calc(0% + 22px) 52%; background-size: 6px 6px; background-repeat: no-repeat; }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      border-color: rgba(0, 98, 230, .45);
+      box-shadow: 0 0 0 4px rgba(0, 98, 230, .12);
+    }
+    .form-hint { font-size: 11.5px; color: var(--text-3); display: flex; align-items: center; gap: 6px; }
+
+    .footer { padding: 30px 0 12px; }
+    .footer-inner {
+      border-radius: var(--r-xl);
+      padding: 30px;
+      display: grid; justify-items: center; gap: 12px; text-align: center;
+      overflow: hidden;
+    }
+    .footer-wordmark {
+      font-size: clamp(46px, 12vw, 96px); font-weight: 700; line-height: 1;
+      letter-spacing: .04em; direction: ltr;
+      background: linear-gradient(180deg, rgba(0, 98, 230, .16), rgba(0, 98, 230, .03));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      margin-top: 4px;
+    }
+    .footer h2 { font-size: 19px; font-weight: 700; }
+    .footer p { color: var(--text-2); font-size: 13.5px; max-width: 46ch; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 4px; }
+    .footer-links a {
+      padding: 8px 15px; border-radius: var(--r-pill);
+      font-size: 12.5px; font-weight: 600; color: var(--text-2);
+      background: var(--fill-2); transition: color .25s, background .25s, transform .25s var(--spring-soft);
+    }
+    .footer-links a:hover { color: var(--brand); background: var(--brand-tint); transform: translateY(-2px); }
+    .copyright { font-size: 11.5px; color: var(--text-3); direction: ltr; margin-top: 6px; }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: calc(12px + var(--safe-b));
+      inset-inline: 0;
+      z-index: 60;
+      display: flex; justify-content: center;
+      padding-inline: 12px;
+      pointer-events: none;
+    }
+    .dock {
+      pointer-events: auto;
+      display: flex; align-items: center; gap: 4px;
+      padding: 7px;
+      border-radius: var(--r-xl);
+      background: linear-gradient(160deg, rgba(255, 255, 255, .88), rgba(255, 255, 255, .66));
+      -webkit-backdrop-filter: var(--blur-2); backdrop-filter: var(--blur-2);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, 0 16px 40px rgba(9, 26, 64, .16), 0 3px 10px rgba(9, 26, 64, .07);
+    }
+    .dock a {
+      position: relative;
+      display: grid; justify-items: center; gap: 3px;
+      min-width: 60px; padding: 8px 10px;
+      border-radius: var(--r-md);
+      font-size: 10.5px; font-weight: 600; color: var(--text-3);
+      transition: color .28s, background .28s, transform .3s var(--spring-soft);
+    }
+    .dock a .icon { font-size: 20px; transition: transform .35s var(--spring); }
+    .dock a:hover { color: var(--brand); background: var(--fill-2); }
+    .dock a.is-active { color: var(--brand); background: var(--brand-tint); }
+    .dock a.is-active .icon { transform: translateY(-2px) scale(1.1); }
+    .dock a.is-pop { animation: dockPop .45s var(--spring); }
+    @keyframes dockPop {
+      0% { transform: scale(1); }
+      45% { transform: scale(.9) translateY(2px); }
+      100% { transform: scale(1); }
+    }
+    .dock .badge {
+      position: absolute; top: 3px; inset-inline-end: 6px;
+      min-width: 17px; height: 17px; padding: 0 5px;
+      display: grid; place-items: center;
+      border-radius: var(--r-pill);
+      background: var(--grad-brand); color: #fff;
+      font-size: 9.5px; font-weight: 700;
+      box-shadow: 0 2px 6px rgba(0, 80, 196, .35), 0 0 0 2px rgba(255, 255, 255, .9);
+    }
+
+    .fab {
+      position: fixed;
+      bottom: calc(var(--dock-h) + 22px + var(--safe-b));
+      inset-inline-start: 16px;
+      z-index: 61;
+      width: 46px; height: 46px; border-radius: 50%;
+      display: grid; place-items: center;
+      color: var(--brand); font-size: 18px;
+      background: linear-gradient(160deg, rgba(255, 255, 255, .92), rgba(255, 255, 255, .7));
+      -webkit-backdrop-filter: var(--blur-2); backdrop-filter: var(--blur-2);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, 0 12px 28px rgba(9, 26, 64, .16);
+      opacity: 0; visibility: hidden; transform: translateY(14px) scale(.9);
+      transition: opacity .35s var(--ease), transform .35s var(--spring), visibility .35s;
+    }
+    .fab.is-visible { opacity: 1; visibility: visible; transform: none; }
+    .fab:hover { transform: translateY(-3px); }
+    .fab:active { transform: scale(.92); }
+
+    .sheet-overlay {
+      position: fixed; inset: 0; z-index: 200;
+      display: flex; align-items: flex-end; justify-content: center;
+      background: rgba(14, 26, 48, 0.26);
+      -webkit-backdrop-filter: blur(10px) saturate(120%); backdrop-filter: blur(10px) saturate(120%);
+      opacity: 0; visibility: hidden;
+      transition: opacity .38s var(--ease), visibility .38s;
+    }
+    .sheet-overlay.is-open { opacity: 1; visibility: visible; }
+
+    .bottom-sheet {
+      width: min(780px, 100%);
+      max-height: min(88svh, 780px);
+      display: grid; grid-template-rows: auto auto 1fr;
+      padding: 10px 18px 20px;
+      border-radius: var(--r-2xl) var(--r-2xl) 0 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .95), rgba(255, 255, 255, .86));
+      -webkit-backdrop-filter: var(--blur-3); backdrop-filter: var(--blur-3);
+      border: 1px solid rgba(255, 255, 255, .95);
+      border-bottom: 0;
+      box-shadow: 0 -18px 60px rgba(9, 26, 64, .22), 0 1px 0 #fff inset;
+      transform: translateY(102%);
+      transition: transform .5s var(--spring);
+      padding-bottom: calc(20px + var(--safe-b));
+      will-change: transform;
+      outline: none;
+    }
+    .sheet-overlay.is-open .bottom-sheet { transform: translateY(0); }
+    .bottom-sheet.is-dragging { transition: none; }
+
+    .sheet-handle {
+      width: 40px; height: 5px; border-radius: var(--r-pill);
+      background: var(--sep-strong);
+      margin: 2px auto 10px; cursor: grab; touch-action: none;
+    }
+    .sheet-head {
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 14px;
+      padding-bottom: 14px;
+    }
+    .sheet-head h2 { font-size: 19px; font-weight: 700; }
+    .sheet-head p { font-size: 12.5px; color: var(--text-3); margin-top: 2px; }
+    .sheet-body { overflow-y: auto; overscroll-behavior: contain; padding-top: 12px; }
+
+    .search-results { display: grid; gap: 8px; }
+    .result-card {
+      display: flex; align-items: center; gap: 12px;
+      width: 100%; padding: 11px 13px;
+      border-radius: var(--r-md);
+      text-align: start;
+      background: var(--fill-2);
+      transition: background .25s, transform .25s var(--spring-soft);
+    }
+    .result-card:hover { background: var(--brand-tint); transform: translateX(-3px); }
+    .result-card strong { display: block; font-size: 14px; font-weight: 700; }
+    .result-card span span { display: block; font-size: 11.5px; color: var(--text-3); }
+    .result-card > .icon:last-child { margin-inline-start: auto; color: var(--text-3); }
+    .round-icon {
+      width: 38px; height: 38px; border-radius: 13px; flex: 0 0 auto;
+      display: grid; place-items: center;
+      color: var(--brand); font-size: 17px;
+      background: #fff; box-shadow: var(--sh-1);
+    }
+    .quick-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .quick-chips button {
+      padding: 7px 13px; border-radius: var(--r-pill);
+      font-size: 12px; font-weight: 600; color: var(--text-2);
+      background: var(--fill-2); border: 1px solid var(--sep);
+      transition: color .25s, background .25s;
+    }
+    .quick-chips button:hover { color: var(--brand); background: var(--brand-tint); }
+
+    .profile-hero {
+      display: grid; gap: 14px; justify-items: center; text-align: center;
+      padding: 6px 0 18px;
+      border-bottom: 1px solid var(--sep);
+    }
+    .profile-photo { width: 104px; height: 104px; border-radius: 32px; box-shadow: 0 12px 30px rgba(9, 26, 64, .16); }
+    .profile-hero h2 { font-size: 22px; font-weight: 700; }
+    .profile-hero p { font-size: 13px; color: var(--text-2); }
+    .profile-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .profile-section { padding: 18px 0; display: grid; gap: 12px; }
+    .profile-section h3 { font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+    .profile-section h3 .icon { color: var(--brand); }
+
+    .mini-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); }
+    .mini-work {
+      display: grid; gap: 8px; padding: 8px; text-align: start;
+      border-radius: var(--r-md);
+      background: var(--fill-2);
+      transition: background .25s, transform .25s var(--spring-soft);
+    }
+    .mini-work:hover { background: var(--brand-tint); transform: translateY(-3px); }
+    .mini-work .media-box { aspect-ratio: 1 / 1; border-radius: var(--r-sm); }
+    .mini-work strong { font-size: 11.5px; font-weight: 600; padding-inline: 4px; line-height: 1.6; }
+
+    .lightbox {
+      position: fixed; inset: 0; z-index: 300;
+      display: grid; grid-template-rows: auto 1fr auto;
+      padding: calc(14px + var(--safe-t)) 14px calc(16px + var(--safe-b));
+      background: rgba(240, 245, 252, 0.72);
+      -webkit-backdrop-filter: var(--blur-3); backdrop-filter: var(--blur-3);
+      opacity: 0; visibility: hidden;
+      transition: opacity .35s var(--ease), visibility .35s;
+    }
+    .lightbox.is-open { opacity: 1; visibility: visible; }
+
+    .viewer-top, .viewer-bottom {
+      display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+      padding: 10px 14px;
+      border-radius: var(--r-lg);
+      background: linear-gradient(160deg, rgba(255, 255, 255, .88), rgba(255, 255, 255, .66));
+      -webkit-backdrop-filter: var(--blur-2); backdrop-filter: var(--blur-2);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: var(--sh-float);
+    }
+    .viewer-title { min-width: 0; }
+    .viewer-title h2 { font-size: 16px; font-weight: 700; line-height: 1.4; }
+    .viewer-title p { font-size: 12px; color: var(--text-3); }
+    .viewer-top .icon-button { margin-inline-start: auto; }
+
+    .viewer-stage {
+      position: relative;
+      display: grid; place-items: center;
+      gap: 12px; padding: 16px 0;
+      min-height: 0;
+    }
+    .viewer-image-box {
+      max-height: 100%; width: auto;
+      border-radius: var(--r-lg);
+      box-shadow: 0 30px 70px rgba(9, 26, 64, .22);
+    }
+    .viewer-image-box img { max-height: min(62svh, 620px); width: auto; max-width: 100%; object-fit: contain; }
+    .viewer-image-box .media-fallback { min-width: 300px; min-height: 220px; }
+
+    .viewer-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 46px; height: 46px; border-radius: 50%;
+      display: grid; place-items: center;
+      color: var(--brand); font-size: 19px;
+      background: rgba(255, 255, 255, .82);
+      -webkit-backdrop-filter: var(--blur-2); backdrop-filter: var(--blur-2);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: var(--sh-2);
+      transition: transform .25s var(--spring-soft), background .25s;
+      z-index: 2;
+    }
+    .viewer-nav:hover { background: #fff; }
+    .viewer-nav.prev { inset-inline-start: 0; }
+    .viewer-nav.next { inset-inline-end: 0; }
+    .viewer-nav.prev:hover { transform: translateY(-50%) translateX(3px); }
+    .viewer-nav.next:hover { transform: translateY(-50%) translateX(-3px); }
+
+    .viewer-info { display: flex; gap: 8px; flex-wrap: wrap; }
+    .viewer-actions { display: flex; gap: 8px; margin-inline-start: auto; }
+
+    .toast {
+      position: fixed;
+      bottom: calc(var(--dock-h) + 26px + var(--safe-b));
+      inset-inline: 0; margin-inline: auto;
+      z-index: 900;
+      width: max-content; max-width: calc(100% - 32px);
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 20px;
+      border-radius: var(--r-pill);
+      font-size: 13.5px; font-weight: 600; color: var(--text);
+      background: rgba(255, 255, 255, .9);
+      -webkit-backdrop-filter: var(--blur-3); backdrop-filter: var(--blur-3);
+      border: 1px solid rgba(255, 255, 255, .95);
+      box-shadow: 0 1px 0 #fff inset, 0 18px 44px rgba(9, 26, 64, .2);
+      opacity: 0; transform: translateY(16px) scale(.94); pointer-events: none;
+      transition: opacity .35s var(--ease), transform .45s var(--spring);
+    }
+    .toast.is-visible { opacity: 1; transform: none; }
+    .toast .icon { color: var(--brand); font-size: 18px; }
+
+    .stretched {
+      position: absolute; inset: 0; z-index: 3;
+      width: 100%; height: 100%;
+      border-radius: inherit;
+      display: block;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .stretched:focus-visible { outline: 2.5px solid var(--brand); outline-offset: -4px; }
+
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(22px) scale(.985);
+      transition: opacity .6s var(--ease), transform .7s var(--spring-soft);
+      transition-delay: var(--d, 0s);
+    }
+    [data-reveal].is-visible { opacity: 1; transform: none; }
+
+    [data-hero] {
+      opacity: 0; transform: translateY(18px);
+      animation: heroIn .8s var(--spring-soft) forwards;
+      animation-delay: var(--d, 0s);
+    }
+    @keyframes heroIn { to { opacity: 1; transform: none; } }
+
+    @media (max-width: 1040px) {
+      .header-nav { display: none; }
+      .header-nav + .header-actions { margin-inline-start: auto; }
+      .order-layout { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      body { font-size: 15px; }
+      .container { width: calc(100% - 26px); }
+      .section { padding: 48px 0; }
+      .hero { padding-top: calc(var(--header-h) + 54px); }
+      .hero-stage { width: 140px; height: 140px; }
+      .hero-logo { width: 92px; height: 92px; border-radius: 28px; }
+      .header-cta .button-label { display: none; }
+      .header-cta { padding: 10px 14px; }
+      .metric { padding: 4px 15px; min-width: 88px; }
+      .metric strong { font-size: 21px; }
+      .dock a { min-width: 54px; padding: 7px 8px; }
+      .dock a span { font-size: 10px; }
+      .viewer-nav { width: 40px; height: 40px; }
+      .volume-range { display: none; }
+      .order-card-main { padding: 22px; border-radius: var(--r-xl); }
+      .process-card { padding: 20px; }
+      .footer-inner { padding: 24px 18px; }
+    }
+
+    @media (max-width: 420px) {
+      .hero-actions .button { width: 100%; }
+      .member-actions { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      [data-reveal], [data-hero] { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#specialties">پرش به محتوای اصلی</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8"/><path d="M5 10v11h14V10"/><path d="M9 21v-7h6v7"/></symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 1 10-10c0 2.2-1.2 3-2.7 3h-1.5c-1.2 0-2 .8-2 2 0 .6.2 1 .5 1.4.6.9-.1 2.6-4.3 2.6Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="10.5" cy="7.5" r="1"/><circle cx="14.5" cy="7.5" r="1"/><circle cx="16.5" cy="11" r="1"/></symbol>
+    <symbol id="icon-robot" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="4"/><path d="M12 7V3"/><path d="M8 3h8"/><path d="M8 14h.01"/><path d="M16 14h.01"/><path d="M9 18h6"/><path d="M2 12v4"/><path d="M22 12v4"/></symbol>
+    <symbol id="icon-landmark" viewBox="0 0 24 24"><path d="M4 21h16"/><path d="M6 21V10l6-6 6 6v11"/><path d="M9 21v-6a3 3 0 0 1 6 0v6"/><path d="M12 4V2"/><path d="M9 10h6"/></symbol>
+    <symbol id="icon-video-edit" viewBox="0 0 24 24"><path d="M15 10 20 7v10l-5-3"/><rect x="3" y="6" width="12" height="12" rx="2"/><path d="M7 3v3"/><path d="M11 3v3"/><path d="M7 18v3"/><path d="M11 18v3"/></symbol>
+    <symbol id="icon-portfolio" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 16 5-5 4 4 2-2 5 5"/><circle cx="16" cy="9" r="1.5"/></symbol>
+    <symbol id="icon-tutorial" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 4-9-4Z"/><path d="M21 10v5"/><path d="M7 9.5V15c0 2 10 2 10 0V9.5"/></symbol>
+    <symbol id="icon-order" viewBox="0 0 24 24"><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><rect x="3" y="6" width="18" height="15" rx="3"/><path d="M3 12h18"/><path d="M12 10v4"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 22a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m5 16 4-4 4 4 2-2 4 4"/><circle cx="16.5" cy="8.5" r="1.5"/></symbol>
+    <symbol id="icon-video" viewBox="0 0 24 24"><rect x="3" y="5" width="14" height="14" rx="3"/><path d="m17 9 4-2v10l-4-2"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M8 5v14"/><path d="M16 5v14"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12"/><path d="M18 6 6 18"/></symbol>
+    <symbol id="icon-back" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="m14 6 6 6-6 6"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 20V5"/><path d="m5 12 7-7 7 7"/></symbol>
+    <symbol id="icon-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.7 6.8-4.4"/><path d="m8.6 13.3 6.8 4.4"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 3h7v7"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></symbol>
+    <symbol id="icon-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.7 4.7L18 9.5l-4.3 1.8L12 16l-1.7-4.7L6 9.5l4.3-1.8Z"/><path d="m19 14 .9 2.2L22 17l-2.1.8L19 20l-.9-2.2L16 17l2.1-.8Z"/><path d="m5 15 .7 1.6L7 17l-1.3.4L5 19l-.7-1.6L3 17l1.3-.4Z"/></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H8l-5 2 2-4a8 8 0 1 1 16-6Z"/><path d="M8 11h8"/><path d="M8 15h5"/></symbol>
+    <symbol id="icon-eitaa" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8H8.4L4 22l1.3-4A8 8 0 1 1 20 11.5Z"/><path d="M8 8.5h8"/><path d="M8 12h5.5"/><path d="M8 15.5h7"/></symbol>
+    <symbol id="icon-fullscreen" viewBox="0 0 24 24"><path d="M8 3H3v5"/><path d="M16 3h5v5"/><path d="M3 16v5h5"/><path d="M21 16v5h-5"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="3"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+    <symbol id="icon-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/><path d="m3 17 9 5 9-5"/></symbol>
+  </svg>
+
+  <div class="bg-fx" aria-hidden="true">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="bg-lines"></div>
+    <div class="bg-grain"></div>
+  </div>
+
+  <div class="splash" id="splash" aria-hidden="true">
+    <div class="splash-card">
+      <div class="splash-logo">
+        <div class="logo-frame">
+          <img class="logo-img js-logo" src="assets/logo.webp" alt="لوگوی آرتیوا" loading="eager" decoding="async">
+          <span class="logo-fallback">ARTIVA</span>
+        </div>
+      </div>
+      <h1 class="splash-title">ARTIVA</h1>
+      <p class="splash-subtitle">تیم خلاق آرتیوا</p>
+      <div class="splash-bar"></div>
+    </div>
+  </div>
+
+  <header class="app-header" id="appHeader">
+    <div class="header-inner glass">
+      <a class="brand" href="#home" aria-label="بازگشت به خانه آرتیوا">
+        <span class="logo-frame" aria-hidden="true">
+          <img class="logo-img js-logo" src="assets/logo.webp" alt="" loading="eager" decoding="async">
+          <span class="logo-fallback">ARTIVA</span>
+        </span>
+        <span class="brand-copy">
+          <strong>آرتیوا</strong>
+          <span>ARTIVA Team</span>
+        </span>
+      </a>
+
+      <nav class="header-nav" id="headerNav" aria-label="ناوبری بخش‌ها">
+        <a href="#team" data-nav="team">تیم</a>
+        <a href="#portfolio" data-nav="portfolio">نمونه‌کار</a>
+        <a href="#videos" data-nav="videos">ویدئو</a>
+        <a href="#tutorials" data-nav="tutorials">آموزش</a>
+        <a href="#order" data-nav="order">سفارش</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="openSearch" type="button" aria-label="جستجو در آرتیوا (کلید K)">
+          <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+        </button>
+        <a class="button primary header-cta" href="#order">
+          <svg class="icon" aria-hidden="true"><use href="#icon-order"></use></svg>
+          <span class="button-label">ثبت سفارش</span>
+        </a>
+      </div>
+
+      <div class="header-progress" aria-hidden="true"><i id="scrollBar"></i></div>
+    </div>
+  </header>
+
+  <main class="app-shell" id="home">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-inner">
+        <div class="hero-stage" data-hero style="--d:.05s">
+          <div class="logo-frame hero-logo glass" id="heroLogo">
+            <img class="logo-img js-logo" src="assets/logo.webp" alt="لوگوی آرتیوا" loading="eager" decoding="async">
+            <span class="logo-fallback">ARTIVA</span>
+          </div>
+          <span class="hero-chip-float c1" aria-hidden="true"><svg class="icon"><use href="#icon-palette"></use></svg></span>
+          <span class="hero-chip-float c2" aria-hidden="true"><svg class="icon"><use href="#icon-robot"></use></svg></span>
+          <span class="hero-chip-float c3" aria-hidden="true"><svg class="icon"><use href="#icon-video-edit"></use></svg></span>
+        </div>
+
+        <span class="hero-badge" data-hero style="--d:.14s">
+          <svg class="icon" aria-hidden="true"><use href="#icon-sparkles"></use></svg>
+          ARTIVA Creative Studio
+        </span>
+
+        <h1 id="heroTitle" data-hero style="--d:.22s">خلاقیت، وقتی <span class="grad-text">تیمی</span> می‌شود.</h1>
+        <p class="lead" data-hero style="--d:.3s">آرتیوا مجموعه‌ای از طراحان، تدوینگران و متخصصان خلاق است که ایده‌ها را به محتوای حرفه‌ای تبدیل می‌کنند؛ از پوستر و لوگو تا محتوای هوش مصنوعی و تدوین ویدئو.</p>
+
+        <div class="hero-actions" role="group" data-hero style="--d:.38s" aria-label="اقدام‌های اصلی">
+          <a class="button primary" href="#team">
+            <svg class="icon" aria-hidden="true"><use href="#icon-team"></use></svg>
+            مشاهده تیم
+          </a>
+          <button class="button glass-btn" type="button" id="heroSearch">
+            <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+            جستجوی عضو یا نمونه‌کار
+            <span class="kbd-hint">⌘K</span>
+          </button>
+        </div>
+
+        <div class="hero-metrics" role="group" data-hero style="--d:.46s" aria-label="آمار تیم آرتیوا">
+          <div class="metric"><strong data-count="12">۱۲</strong><span>عضو فعال</span></div>
+          <div class="metric"><strong data-count="4">۴</strong><span>تخصص اصلی</span></div>
+          <div class="metric"><strong data-count="12">۱۲</strong><span>نمونه‌کار</span></div>
+        </div>
+
+        <p class="hero-note" data-hero style="--d:.52s">
+          <svg class="icon sm" aria-hidden="true"><use href="#icon-clock"></use></svg>
+          پاسخ‌گویی سفارش‌ها معمولاً کمتر از ۲۴ ساعت
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="marquee" data-hero style="--d:.58s" aria-hidden="true">
+          <div class="marquee-track">
+            <span>طراحی گرافیک <i>✦</i> هوش مصنوعی <i>✦</i> تدوین ویدئو <i>✦</i> طراحی مذهبی <i>✦</i> پوستر و لوگو <i>✦</i> محتوای مناسبتی <i>✦</i> هویت بصری <i>✦</i></span>
+            <span>طراحی گرافیک <i>✦</i> هوش مصنوعی <i>✦</i> تدوین ویدئو <i>✦</i> طراحی مذهبی <i>✦</i> پوستر و لوگو <i>✦</i> محتوای مناسبتی <i>✦</i> هویت بصری <i>✦</i></span>
+          </div>
+        </div>
+
+        <div class="widget-grid">
+          <article class="widget glass" data-glass data-reveal style="--d:.04s">
+            <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-layers"></use></svg></span>
+            <div><h3>تخصص‌ها</h3><p>چهار مسیر اصلی تیم را مرور کنید.</p></div>
+            <span class="widget-foot">مرور تخصص‌ها <svg class="icon sm" aria-hidden="true"><use href="#icon-chevron"></use></svg></span>
+          <a class="stretched" href="#specialties" aria-label="مرور تخصص‌ها"></a></article><article class="widget glass" data-glass data-reveal style="--d:.1s">
+            <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg></span>
+            <div><h3>نمونه‌کارها</h3><p>خروجی واقعی اعضا در ویوئر تمام‌صفحه.</p></div>
+            <span class="widget-foot">دیدن کارها <svg class="icon sm" aria-hidden="true"><use href="#icon-chevron"></use></svg></span>
+          <a class="stretched" href="#portfolio" aria-label="دیدن نمونه‌کارها"></a></article><article class="widget glass" data-glass data-reveal style="--d:.16s">
+            <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-video"></use></svg></span>
+            <div><h3>ویدئوها</h3><p>تدوین‌های تیم با پلیر اختصاصی.</p></div>
+            <span class="widget-foot">پخش ویدئو <svg class="icon sm" aria-hidden="true"><use href="#icon-chevron"></use></svg></span>
+          <a class="stretched" href="#videos" aria-label="پخش ویدئوها"></a></article><article class="widget glass" data-glass data-reveal style="--d:.22s">
+            <span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#icon-bolt"></use></svg></span>
+            <div><h3>سفارش سریع</h3><p>پیام سفارش را بسازید و در ایتا بفرستید.</p></div>
+            <span class="widget-foot">شروع سفارش <svg class="icon sm" aria-hidden="true"><use href="#icon-chevron"></use></svg></span>
+          <a class="stretched" href="#order" aria-label="شروع سفارش"></a></article></div>
+      </div>
+    </section>
+
+    <section class="section compact" id="specialties" aria-labelledby="specialtiesTitle">
+      <div class="container">
+        <div class="section-top" data-reveal>
+          <div>
+            <div class="section-kicker">Directory</div>
+            <h2 class="section-title" id="specialtiesTitle">تخصص‌های آرتیوا</h2>
+            <p class="section-desc">چهار مسیر اصلی تیم؛ با لمس هر کارت، اعضای همان دسته را ببینید.</p>
+          </div>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="team" aria-labelledby="teamTitle">
+      <div class="container">
+        <div class="section-top" data-reveal>
+          <div>
+            <div class="section-kicker">Team</div>
+            <h2 class="section-title" id="teamTitle">اعضای تیم آرتیوا</h2>
+            <p class="section-desc">پروفایل هر عضو، نمونه‌کارها و مسیر سفارش اختصاصی از همین بخش در دسترس است.</p>
+          </div>
+          <div class="section-side">
+            <span class="tag neutral" id="teamCountTag">۱۲ عضو</span>
+          </div>
+        </div>
+        <div class="search-panel" data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+          <label class="sr-only" for="teamSearch">جستجوی عضو تیم</label>
+          <input id="teamSearch" type="search" autocomplete="off" placeholder="جستجو با نام، آیدی یا تخصص؛ مثل Graphessor">
+          <button class="search-clear" type="button" id="teamSearchClear" aria-label="پاک کردن جستجو" hidden>
+            <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+          </button>
+        </div>
+        <div class="chip-row segmented" id="teamFilters" role="group" aria-label="فیلتر اعضای تیم"></div>
+        <div class="members-grid" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio" aria-labelledby="portfolioTitle">
+      <div class="container">
+        <div class="section-top" data-reveal>
+          <div>
+            <div class="section-kicker">Portfolio</div>
+            <h2 class="section-title" id="portfolioTitle">نمونه‌کارهای تیم</h2>
+            <p class="section-desc">نمونه کارهارو با کلیک کردن ببینید.</p>
+          </div>
+          <div class="section-side">
+            <button class="button glass-btn sm" type="button" id="openSearch2">
+              <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>جستجو در کارها
+            </button>
+          </div>
+        </div>
+        <div class="chip-row segmented" id="portfolioFilters" role="group" aria-label="فیلتر نمونه‌کارها"></div>
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="videos" aria-labelledby="videosTitle">
+      <div class="container">
+        <div class="section-top" data-reveal>
+          <div>
+            <div class="section-kicker">Video</div>
+            <h2 class="section-title" id="videosTitle">ویدئوهای تیم</h2>
+            <p class="section-desc">برای پخش ویدیو روی کلیپ موردنظر کلیک کنید.</p>
+          </div>
+        </div>
+        <div class="video-grid" id="videoGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="tutorials" aria-labelledby="tutorialsTitle">
+      <div class="container">
+        <div class="section-top" data-reveal>
+          <div>
+            <div class="section-kicker">Tutorial</div>
+            <h2 class="section-title" id="tutorialsTitle">آموزش‌های آرتیوا</h2>
+            <p class="section-desc">آموزش‌های تخصصی اعضای تیم؛ هر آموزش به‌زودی با لینک اختصاصی در دسترس قرار می‌گیرد.</p>
+          </div>
+        </div>
+        <div class="tutorial-grid" id="tutorialGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="process" aria-labelledby="processTitle">
+      <div class="container">
+        <div class="process-card glass" data-reveal data-glass>
+          <div class="section-kicker">How it works</div>
+          <h2 class="section-title" id="processTitle">مسیر سفارش در آرتیوا</h2>
+          <p class="section-desc">سه گام ساده تا رسیدن ایده به خروجی نهایی.</p>
+          <div class="process-steps">
+            <div class="step">
+              <span class="step-num">۱</span>
+              <h3>انتخاب عضو</h3>
+              <p>عضو یا تخصص مورد نظر را از بخش تیم پیدا کنید و پروفایل او را ببینید.</p>
+            </div>
+            <div class="step">
+              <span class="step-num">۲</span>
+              <h3>ارسال پیام سفارش</h3>
+              <p>فرم سفارش را پر کنید؛ متن آماده کپی می‌شود و در ایتا برای ادمین بفرستید.</p>
+            </div>
+            <div class="step">
+              <span class="step-num">۳</span>
+              <h3>تحویل خروجی</h3>
+              <p>پس از هماهنگی، فایل نهایی با کیفیت اصلی تحویل داده می‌شود.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="order" aria-labelledby="orderTitle">
+      <div class="container">
+        <div class="order-card-main" id="orderCard" data-reveal>
+          <div>
+            <span class="section-kicker">Order</span>
+            <h2 id="orderTitle">ثبت <span class="grad-text">سفارش</span></h2>
+            <p>برای ثبت سفارش، فرم زیر را پر کنید تا متن آماده ساخته شود؛ سپس آن را در ایتا برای ادمین آرتیوا بفرستید. آیدی عضوی که سفارش را برای او می‌خواهید هم در متن درج می‌شود.</p>
+          </div>
+
+          <span class="admin-chip">
+            <svg class="icon" aria-hidden="true"><use href="#icon-eitaa"></use></svg>
+            <span id="adminIdText">@nova_graphii</span>
+            <button type="button" id="copyAdmin" aria-label="کپی آیدی ادمین">
+              <svg class="icon sm" aria-hidden="true"><use href="#icon-copy"></use></svg>
+            </button>
+          </span>
+
+          <div class="order-layout">
+            <form class="order-form" id="orderForm" novalidate>
+              <div class="field">
+                <label for="orderName">نام شما</label>
+                <input id="orderName" name="name" type="text" autocomplete="name" placeholder="مثلاً علی">
+              </div>
+              <div class="field">
+                <label for="orderService">نوع خدمات</label>
+                <select id="orderService" name="service">
+                  <option value="طراحی گرافیک (پوستر، لوگو، بنر)">طراحی گرافیک (پوستر، لوگو، بنر)</option>
+                  <option value="تولید محتوای هوش مصنوعی">تولید محتوای هوش مصنوعی</option>
+                  <option value="طراحی مذهبی و مناسبتی">طراحی مذهبی و مناسبتی</option>
+                  <option value="تدوین ویدئو">تدوین ویدئو</option>
+                  <option value="سایر موارد">سایر موارد</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="orderMemberSelect">عضو مورد نظر (اختیاری)</label>
+                <select id="orderMemberSelect" name="member">
+                  <option value="">فرقی نمی‌کند</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="orderDesc">توضیح سفارش</label>
+                <textarea id="orderDesc" name="desc" placeholder="اندازه، رنگ‌بندی، متن روی طرح و زمان تحویل مورد نظر را بنویسید."></textarea>
+              </div>
+              <button class="button primary block" type="submit">
+                <svg class="icon" aria-hidden="true"><use href="#icon-message"></use></svg>
+                ساخت پیام و کپی متن
+              </button>
+              <p class="form-hint">
+                <svg class="icon sm" aria-hidden="true"><use href="#icon-shield"></use></svg>
+                هیچ اطلاعاتی ذخیره یا ارسال نمی‌شود؛ متن فقط در دستگاه شما کپی می‌شود.
+              </p>
+            </form>
+
+            <div class="order-actions" style="flex-direction:column;align-items:stretch">
+              <a class="button primary block" href="https://eitaa.com/nova_graphii" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true"><use href="#icon-eitaa"></use></svg>
+                پیام به ادمین آرتیوا
+              </a>
+              <a class="button glass-btn block" href="#team">
+                <svg class="icon" aria-hidden="true"><use href="#icon-user"></use></svg>
+                انتخاب عضو برای سفارش
+              </a>
+              <a class="button tint block" href="#portfolio">
+                <svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>
+                دیدن نمونه‌کارها قبل از سفارش
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner glass">
+        <div class="logo-frame" style="width:52px;height:52px;border-radius:16px">
+          <img class="logo-img js-logo" src="assets/logo.webp" alt="لوگوی آرتیوا" loading="lazy" decoding="async">
+          <span class="logo-fallback">ARTIVA</span>
+        </div>
+        <div class="footer-wordmark" aria-hidden="true">ARTIVA</div>
+        <h2>تیم خلاق آرتیوا</h2>
+        <p>ایده‌ها را به محتوای حرفه‌ای تبدیل می‌کنیم؛ طراحی، تدوین، هوش مصنوعی و محتوای مذهبی.</p>
+        <div class="footer-links">
+          <a href="#team">اعضای تیم</a>
+          <a href="#portfolio">نمونه‌کارها</a>
+          <a href="#videos">ویدئوها</a>
+          <a href="#tutorials">آموزش‌ها</a>
+          <a href="https://eitaa.com/nova_graphii" target="_blank" rel="noopener noreferrer">ایتا</a>
+        </div>
+        <a class="button primary" href="https://eitaa.com/nova_graphii" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#icon-order"></use></svg>
+          ثبت سفارش
+        </a>
+        <div class="copyright">© 2026 ARTIVA Team · ساخته‌شده با دقت برای تیم آرتیوا</div>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="ناوبری اصلی">
+    <div class="dock" id="bottomNav">
+      <a href="#home" data-nav="home" class="is-active"><svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg><span>خانه</span></a>
+      <a href="#team" data-nav="team"><svg class="icon" aria-hidden="true"><use href="#icon-team"></use></svg><span>تیم</span><b class="badge" data-badge="team" hidden></b></a>
+      <a href="#portfolio" data-nav="portfolio"><svg class="icon" aria-hidden="true"><use href="#icon-portfolio"></use></svg><span>نمونه‌کار</span><b class="badge" data-badge="portfolio" hidden></b></a>
+      <a href="#tutorials" data-nav="tutorials"><svg class="icon" aria-hidden="true"><use href="#icon-tutorial"></use></svg><span>آموزش</span></a>
+      <a href="#order" data-nav="order"><svg class="icon" aria-hidden="true"><use href="#icon-order"></use></svg><span>سفارش</span></a>
+    </div>
+  </nav>
+
+  <button class="fab" id="backToTop" type="button" aria-label="بازگشت به بالا">
+    <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="sheet-overlay" id="searchSheet" role="dialog" aria-modal="true" inert aria-hidden="true" aria-labelledby="searchSheetTitle">
+    <div class="bottom-sheet" tabindex="-1">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="sheet-head">
+        <div>
+          <h2 id="searchSheetTitle">جستجوی سریع</h2>
+          <p>نام عضو، آیدی، تخصص یا نمونه‌کار را وارد کنید.</p>
+        </div>
+        <button class="icon-button" type="button" data-close-layer="searchSheet" aria-label="بستن جستجو"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      </div>
+      <div class="sheet-body">
+        <div class="search-panel" style="margin-bottom:12px">
+          <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+          <label class="sr-only" for="globalSearch">جستجوی سراسری</label>
+          <input id="globalSearch" type="search" autocomplete="off" placeholder="مثلاً Graphessor یا تدوین">
+        </div>
+        <div class="search-results" id="globalSearchResults"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-overlay" id="profileSheet" role="dialog" aria-modal="true" inert aria-hidden="true" aria-labelledby="profileSheetTitle">
+    <div class="bottom-sheet" tabindex="-1">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="sheet-head">
+        <button class="button glass-btn sm" type="button" data-close-layer="profileSheet"><svg class="icon" aria-hidden="true"><use href="#icon-back"></use></svg>بازگشت</button>
+        <button class="icon-button" type="button" data-close-layer="profileSheet" aria-label="بستن پروفایل"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      </div>
+      <div class="sheet-body" id="profileContent"></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="portfolioViewer" role="dialog" aria-modal="true" inert aria-hidden="true" aria-labelledby="viewerTitle">
+    <div class="viewer-top">
+      <div class="viewer-title">
+        <h2 id="viewerTitle">نمونه‌کار</h2>
+        <p id="viewerSubtitle">آرتیوا</p>
+      </div>
+      <button class="icon-button" type="button" data-close-layer="portfolioViewer" aria-label="بستن نمایشگر"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+    </div>
+
+    <div class="viewer-stage" id="viewerStage">
+      <button class="viewer-nav prev" type="button" id="viewerPrev" aria-label="نمونه‌کار قبلی"><svg class="icon" aria-hidden="true"><use href="#icon-chevron"></use></svg></button>
+      <div class="media-box viewer-image-box" id="viewerImageBox">
+        <img id="viewerImage" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" loading="eager" decoding="async">
+        <div class="media-fallback"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg><span>تصویر نمونه‌کار پس از قرارگیری Asset نمایش داده می‌شود.</span></div>
+      </div>
+      <button class="viewer-nav next" type="button" id="viewerNext" aria-label="نمونه‌کار بعدی"><svg class="icon" aria-hidden="true"><use href="#icon-chevron"></use></svg></button>
+    </div>
+
+    <div class="viewer-bottom">
+      <div class="viewer-info" id="viewerInfo"></div>
+      <div class="viewer-actions">
+        <button class="button glass-btn" type="button" id="shareWork"><svg class="icon" aria-hidden="true"><use href="#icon-share"></use></svg>اشتراک</button>
+        <button class="button primary" type="button" id="orderWork"><svg class="icon" aria-hidden="true"><use href="#icon-order"></use></svg>سفارش</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* =========================================================
+       ARTIVA — app logic
+
+       📌 راهنمای ویرایش سریع
+
+       ▸ اضافه کردن نمونه‌کار به یک عضو:
+           در آرایهٔ teamMembers، همون عضو رو پیدا کن و
+           یک رشته به آرایهٔ works اضافه کن:
+           works: ["work-001.webp", "work-002.webp", "work-003.webp"]
+
+       ▸ حذف نمونه‌کار:
+           فقط اون رشته رو از آرایهٔ works پاک کن.
+
+       ⚠️ نکتهٔ مهم دربارهٔ بخش «نمونه‌کارهای تیم»:
+           در بخش نمونه‌کارها فقط «اولین» کار هر عضو نمایش داده می‌شود
+           (یعنی works[0]). بقیهٔ کارها (دوم، سوم، چهارم و ...) فقط
+           داخل پروفایل همون عضو قابل مشاهده‌اند.
+           برای اینکه کار شاخص یک عضو عوض بشه، کافیه ترتیب آرایهٔ
+           works رو جابه‌جا کنی؛ اولین آیتم همون چیزیه که در
+           نمونه‌کارهای تیم دیده می‌شه.
+
+       ▸ اضافه کردن ویدئو به یک عضو:
+           فیلد video رو از null عوض کن به:
+           video: { thumb: "thumb.webp", src: "video.mp4" }
+
+       ▸ حذف ویدئو:
+           فیلد video رو null کن.
+
+       ▸ اضافه کردن آموزش به یک عضو:
+           فیلد tutorial رو از null عوض کن به:
+           tutorial: { title: "عنوان آموزش", thumb: "tutorial.webp", url: "" }
+
+       ▸ حذف آموزش:
+           فیلد tutorial رو null کن.
+
+       ▸ اضافه کردن عضو جدید:
+           ۱) یک شیء جدید به آرایهٔ teamMembers اضافه کن
+           ۲) یک پوشه با اسم id همون عضو داخل assets/ بساز
+           ۳) فایل photo.webp و work-001.webp رو داخلش بذار
+
+       📁 نام فایل‌های داخل هر پوشه:
+           photo.webp      → عکس پروفایل (الزامی)
+           work-001.webp   → نمونه‌کار (اختیاری، چند تا مجاز)
+           work-002.webp   → نمونه‌کار دوم (اختیاری)
+           thumb.webp      → تامبنیل ویدئو (فقط برای ویدئو دارها)
+           video.mp4       → خود ویدئو (فقط برای ویدئو دارها)
+           tutorial.webp   → تامبنیل آموزش (فقط برای آموزش دارها)
+       ========================================================= */
+
+    const siteConfig = {
+      name: "آرتیوا",
+      englishName: "ARTIVA",
+      logo: "assets/logo.webp",
+      admin: {
+        username: "@nova_graphii",
+        url: "https://eitaa.com/nova_graphii"
+      }
+    };
+
+    const categories = [
+      { id: "graphic", title: "طراحی گرافیک", shortTitle: "گرافیک", icon: "palette", description: "پوستر، لوگو، بنر، کاور و هویت بصری." },
+      { id: "ai", title: "هوش مصنوعی", shortTitle: "هوش مصنوعی", icon: "robot", description: "ایده‌پردازی، تولید تصویر و محتوای خلاق با AI." },
+      { id: "religious", title: "طراحی مذهبی", shortTitle: "مذهبی", icon: "landmark", description: "طراحی محتوای مناسبتی، مذهبی و فرهنگی." },
+      { id: "editing", title: "تدوین", shortTitle: "تدوین", icon: "video-edit", description: "تدوین ویدئو، ریتم، صداگذاری و خروجی حرفه‌ای." }
+    ];
+
+    /* ═══════════════════════════════════════════════════════════
+       🎯 منبع اصلی داده — همهٔ چیزها از همین آرایه میاد
+       ═══════════════════════════════════════════════════════════ */
+    const teamMembers = [
+      /* ---------- گرافیک ---------- */
+      {
+        id: "graphessor", name: "Graphessor", username: "@Graphessor_Admin",
+        role: "طراح گرافیک", category: "graphic",
+        folder: "assets/graphessor/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: null,
+        tutorial: { title: "آموزش طراحی گرافیک در آرتیوا", thumb: "tutorial.webp", url: "" }
+      },
+      {
+        id: "emmograph", name: "Emmograph", username: "@Admin_Emmograph1",
+        role: "طراح گرافیک", category: "graphic",
+        folder: "assets/emmograph/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: null,
+        tutorial: null
+      },
+      {
+        id: "ali-grapph", name: "Ali Grapph", username: "@admin_Ali_Grapph",
+        role: "طراح گرافیک", category: "graphic",
+        folder: "assets/ali-grapph/",
+        photo: "photo.webp",
+        works: ["work-001.webp", "work-002.webp"],
+        video: null,
+        tutorial: null
+      },
+
+      /* ---------- هوش مصنوعی ---------- */
+      {
+        id: "parsa", name: "Parsa", username: "@parsa_parsanoo",
+        role: "متخصص هوش مصنوعی", category: "ai",
+        folder: "assets/parsa/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: null,
+        tutorial: { title: "آموزش تولید محتوای هوش مصنوعی", thumb: "tutorial.webp", url: "" }
+      },
+      {
+        id: "haiper", name: "HAIPER", username: "@HAIPER_SONIC",
+        role: "متخصص هوش مصنوعی", category: "ai",
+        folder: "assets/haiper/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: null,
+        tutorial: null
+      },
+      {
+        id: "roozbeh", name: "Roozbeh", username: "@Roozbehhg",
+        role: "متخصص هوش مصنوعی", category: "ai",
+        folder: "assets/roozbeh/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: null,
+        tutorial: null
+      },
+
+      /* ---------- مذهبی ---------- */
+      {
+        id: "ain", name: "Ain", username: "@Ain_57",
+        role: "طراح مذهبی", category: "religious",
+        folder: "assets/ain/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: null,
+        tutorial: { title: "آموزش طراحی مذهبی مینیمال", thumb: "tutorial.webp", url: "" }
+      },
+      {
+        id: "ali-asghar", name: "Ali Asghar", username: "@Ali_Asghar_9643",
+        role: "طراح مذهبی", category: "religious",
+        folder: "assets/ali-asghar/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: null,
+        tutorial: null
+      },
+      {
+        id: "mohieddin", name: "Mohieddin", username: "@mohieddin133",
+        role: "طراح مذهبی", category: "religious",
+        folder: "assets/mohieddin/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: null,
+        tutorial: null
+      },
+
+      /* ---------- تدوین ---------- */
+      {
+        id: "mabnee", name: "Mabnee", username: "@Mabnee128",
+        role: "تدوینگر", category: "editing",
+        folder: "assets/mabnee/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: { thumb: "thumb.webp", src: "video.mp4" },
+        tutorial: { title: "آموزش تدوین موبایلی حرفه‌ای", thumb: "tutorial.webp", url: "" }
+      },
+      {
+        id: "danial", name: "Danial Hoseinii", username: "@Danial_Hoseinii10",
+        role: "تدوینگر", category: "editing",
+        folder: "assets/danial/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: { thumb: "thumb.webp", src: "video.mp4" },
+        tutorial: null
+      },
+      {
+        id: "ekrano", name: "Ekrano", username: "@Ekrano",
+        role: "تدوینگر", category: "editing",
+        folder: "assets/ekrano/",
+        photo: "photo.webp",
+        works: ["work-001.webp"],
+        video: { thumb: "thumb.webp", src: "video.mp4" },
+        tutorial: null
+      }
+    ];
+
+    /* ═══════════════════════════════════════════════════════════
+       🔧 توابع کمکی برای ساخت لیست‌های flat از teamMembers
+       ═══════════════════════════════════════════════════════════ */
+
+    function getMemberPhoto(member) {
+      return member.folder + member.photo;
+    }
+
+    /* همهٔ نمونه‌کارهای یک عضو (برای پروفایل) */
+    function getMemberWorks(member) {
+      return (member.works || []).map((fileName, index) => ({
+        id: `${member.id}-work-${index + 1}`,
+        title: (member.works.length > 1)
+          ? `نمونه‌کار ${member.name} ${toFaNumber(index + 1)}`
+          : `نمونه‌کار ${member.name}`,
+        category: member.category,
+        memberId: member.id,
+        type: "image",
+        src: member.folder + fileName
+      }));
+    }
+
+    /* 🔎 همهٔ نمونه‌کارهای همهٔ اعضا — فقط برای جستجو و ویوئر داخلی پروفایل */
+    function getAllPortfolioItems() {
+      return teamMembers.flatMap(getMemberWorks);
+    }
+
+    /* 🎨 لیست نمونه‌کارهای بخش «نمونه‌کارهای تیم»
+       — فقط اولین نمونه‌کار هر عضو (works[0])
+       — کارهای دوم، سوم و ... صرفاً در پروفایل عضو نمایش داده می‌شوند. */
+    function getPortfolioItems() {
+      return teamMembers.flatMap(member => getMemberWorks(member).slice(0, 1));
+    }
+
+    function getVideoItems() {
+      return teamMembers
+        .filter(member => member.video)
+        .map(member => ({
+          id: `${member.id}-video`,
+          title: `ویدئوی ${member.name}`,
+          memberId: member.id,
+          src: member.folder + member.video.src,
+          thumbnail: member.folder + member.video.thumb
+        }));
+    }
+
+    function getTutorials() {
+      return teamMembers
+        .filter(member => member.tutorial)
+        .map(member => ({
+          id: `${member.id}-tutorial`,
+          title: member.tutorial.title,
+          teacher: member.name,
+          memberId: member.id,
+          category: member.category,
+          thumbnail: member.folder + member.tutorial.thumb,
+          url: member.tutorial.url || ""
+        }));
+    }
+
+    /* ---------------- Helpers ---------------- */
+    const $ = (selector, scope = document) => scope.querySelector(selector);
+    const $$ = (selector, scope = document) => Array.from(scope.querySelectorAll(selector));
+
+    const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+    const toFaNumber = value => String(value).replace(/\d/g, digit => persianDigits[digit]);
+    const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function escapeHTML(value) {
+      return String(value ?? "").replace(/[&<>'"]/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", "\"": "&quot;" }[char]));
+    }
+
+    function icon(name, extraClass = "") {
+      return `<svg class="icon ${extraClass}" aria-hidden="true"><use href="#icon-${escapeHTML(name)}"></use></svg>`;
+    }
+
+    function normalizeText(value) {
+      return String(value ?? "")
+        .toLowerCase()
+        .replace(/[\u064B-\u065F\u0670]/g, "")
+        .replace(/ي/g, "ی")
+        .replace(/ك/g, "ک")
+        .trim();
+    }
+
+    const getCategory = id => categories.find(category => category.id === id) || categories[0];
+    const getMember = id => teamMembers.find(member => member.id === id) || teamMembers[0];
+
+    function mediaBox(src, alt, className = "", loading = "lazy", fallbackText = "Asset محلی پس از قرارگیری در این مسیر نمایش داده می‌شود.") {
+      return `
+        <div class="media-box ${escapeHTML(className)}">
+          <img src="${escapeHTML(src)}" alt="${escapeHTML(alt)}" loading="${escapeHTML(loading)}" decoding="async">
+          <div class="media-fallback">${icon("image")}<span>${escapeHTML(fallbackText)}</span></div>
+        </div>
+      `;
+    }
+
+    function enhanceImages(scope = document) {
+      $$('img', scope).forEach(img => {
+        if (img.dataset.enhanced === "true") return;
+        img.dataset.enhanced = "true";
+        const frame = () => img.closest('.media-box, .logo-frame');
+        const markError = () => { const f = frame(); if (f) { f.classList.add('is-error'); f.classList.remove('is-loaded'); } };
+        const markLoaded = () => { const f = frame(); if (f) { f.classList.add('is-loaded'); f.classList.remove('is-error'); } };
+        img.addEventListener('error', markError);
+        img.addEventListener('load', markLoaded);
+        if (img.complete) img.naturalWidth === 0 ? markError() : markLoaded();
+      });
+    }
+
+    function showToast(message, iconName = "check") {
+      const toast = $('#toast');
+      toast.innerHTML = `${icon(iconName)}<span>${escapeHTML(message)}</span>`;
+      toast.classList.add('is-visible');
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove('is-visible'), 2800);
+    }
+
+    async function copyText(text) {
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return true;
+        }
+      } catch (_) { /* fall through */ }
+      try {
+        const area = document.createElement('textarea');
+        area.value = text;
+        area.setAttribute('readonly', '');
+        area.style.cssText = 'position:fixed;top:-1000px;opacity:0';
+        document.body.appendChild(area);
+        area.select();
+        const ok = document.execCommand('copy');
+        area.remove();
+        return ok;
+      } catch (_) {
+        return false;
+      }
+    }
+
+    /* ---------------- Reveal ---------------- */
+    const revealObserver = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' }) : null;
+
+    function observeReveals(scope = document) {
+      const targets = $$('[data-reveal]', scope).filter(el => el.dataset.revealed !== "true");
+      if (!targets.length) return;
+      if (!revealObserver || reduceMotion()) {
+        targets.forEach(el => { el.dataset.revealed = "true"; el.classList.add('is-visible'); });
+        return;
+      }
+      targets.forEach(el => { el.dataset.revealed = "true"; revealObserver.observe(el); });
+    }
+
+    /* ---------------- Counters ---------------- */
+    function initCounters() {
+      /* به‌روزرسانی خودکار شمارنده‌ها بر اساس داده‌های واقعی */
+      const metrics = $$('.hero-metrics .metric');
+      if (metrics.length >= 3) {
+        const memberCount = teamMembers.length;
+        const categoryCount = categories.length;
+        /* تعداد نمونه‌کارهای بخش اصلی = یک کار از هر عضو */
+        const portfolioCount = getPortfolioItems().length;
+        const values = [memberCount, categoryCount, portfolioCount];
+        metrics.forEach((metric, i) => {
+          const el = $('[data-count]', metric);
+          if (el) el.dataset.count = values[i];
+        });
+      }
+
+      $$('[data-count]').forEach(el => {
+        const target = Number(el.dataset.count);
+        if (!Number.isFinite(target)) return;
+        if (reduceMotion()) { el.textContent = toFaNumber(target); return; }
+        const duration = 1400;
+        const start = performance.now();
+        const tick = now => {
+          const progress = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = toFaNumber(Math.round(target * eased));
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }
+
+    /* ---------------- Categories ---------------- */
+    function renderCategories() {
+      const grid = $('#categoryGrid');
+      grid.innerHTML = categories.map((category, index) => {
+        const count = teamMembers.filter(member => member.category === category.id).length;
+        /* تعداد کارهای نمایش‌داده‌شده در بخش نمونه‌کارها (یک کار از هر عضو) */
+        const works = getPortfolioItems().filter(item => item.category === category.id).length;
+        return `
+          <article class="category-card glass" data-reveal data-glass style="--d:${(index % 4) * 0.07}s">
+            <div class="category-head">
+              <span class="icon-tile">${icon(category.icon)}</span>
+              <div>
+                <h3>${escapeHTML(category.title)}</h3>
+                <p>${escapeHTML(category.description)}</p>
+              </div>
+            </div>
+            <div class="category-foot">
+              <span>${toFaNumber(count)} عضو · ${toFaNumber(works)} کار</span>
+              ${icon("chevron")}
+            </div>
+            <button class="stretched" type="button" data-select-category="${escapeHTML(category.id)}" aria-label="نمایش اعضای ${escapeHTML(category.title)}"></button>
+          </article>
+        `;
+      }).join('');
+      observeReveals(grid);
+    }
+
+    /* ---------------- Team ---------------- */
+    let activeTeamCategory = "all";
+    let teamSearchQuery = "";
+
+    function renderTeamFilters() {
+      const filters = $('#teamFilters');
+      const items = [{ id: "all", title: "همه" }, ...categories.map(category => ({ id: category.id, title: category.shortTitle }))];
+      filters.innerHTML = items.map(item => `
+        <button class="${activeTeamCategory === item.id ? 'is-active' : ''}" type="button" data-team-filter="${escapeHTML(item.id)}" aria-pressed="${activeTeamCategory === item.id}">${escapeHTML(item.title)}</button>
+      `).join('');
+    }
+
+    function getFilteredMembers() {
+      const query = normalizeText(teamSearchQuery);
+      return teamMembers.filter(member => {
+        const categoryMatch = activeTeamCategory === "all" || member.category === activeTeamCategory;
+        const haystack = normalizeText(`${member.name} ${member.username} ${member.role} ${getCategory(member.category).title}`);
+        return categoryMatch && (!query || haystack.includes(query));
+      });
+    }
+
+    function renderTeam() {
+      renderTeamFilters();
+      const members = getFilteredMembers();
+      const grid = $('#teamGrid');
+      $('#teamCountTag').textContent = `${toFaNumber(members.length)} عضو`;
+      if (!members.length) {
+        grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">${icon("search")}<span>عضوی با این جستجو پیدا نشد.</span></div>`;
+        return;
+      }
+      grid.innerHTML = members.map((member, index) => {
+        const category = getCategory(member.category);
+        return `
+          <article class="member-card glass" data-reveal data-glass style="--d:${(index % 3) * 0.07}s">
+            <div class="member-cover" aria-hidden="true"></div>
+            <div class="member-top">
+              ${mediaBox(getMemberPhoto(member), `تصویر ${member.name}`, "member-photo", "lazy", "تصویر عضو از مسیر محلی بارگذاری می‌شود.")}
+              <div class="member-id">
+                <h3>${escapeHTML(member.name)}</h3>
+                <p class="member-role">${escapeHTML(member.role)}</p>
+              </div>
+            </div>
+            <div class="member-info">
+              <div class="meta-line">
+                <span class="tag">${icon(category.icon, "sm")} ${escapeHTML(category.title)}</span>
+              </div>
+              <a class="member-username" href="https://eitaa.com/${escapeHTML(member.username.replace(/^@/, ''))}" target="_blank" rel="noopener noreferrer" aria-label="مشاهده ایتای ${escapeHTML(member.name)}">
+                ${icon("eitaa", "sm")}<span>${escapeHTML(member.username)}</span>
+              </a>
+            </div>
+            <div class="member-actions">
+              <button class="button primary" type="button" data-open-member="${escapeHTML(member.id)}">پروفایل</button>
+              <button class="button glass-btn" type="button" data-order-member="${escapeHTML(member.id)}">ثبت سفارش</button>
+            </div>
+          </article>
+        `;
+      }).join('');
+      enhanceImages(grid);
+      observeReveals(grid);
+    }
+
+    function setTeamCategory(categoryId, scrollToTeam = false) {
+      activeTeamCategory = categoryId;
+      renderTeam();
+      if (scrollToTeam) $('#team').scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth', block: 'start' });
+    }
+
+    /* ---------------- Portfolio ---------------- */
+    let activePortfolioCategory = "all";
+
+    function renderPortfolioFilters() {
+      const filters = $('#portfolioFilters');
+      const items = [{ id: "all", title: "همه" }, ...categories.map(category => ({ id: category.id, title: category.shortTitle }))];
+      filters.innerHTML = items.map(item => `
+        <button class="${activePortfolioCategory === item.id ? 'is-active' : ''}" type="button" data-portfolio-filter="${escapeHTML(item.id)}" aria-pressed="${activePortfolioCategory === item.id}">${escapeHTML(item.title)}</button>
+      `).join('');
+    }
+
+    const getVisiblePortfolioItems = () => getPortfolioItems().filter(item => activePortfolioCategory === "all" || item.category === activePortfolioCategory);
+
+    function renderPortfolio() {
+      renderPortfolioFilters();
+      const items = getVisiblePortfolioItems();
+      const grid = $('#portfolioGrid');
+      if (!items.length) {
+        grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">${icon("portfolio")}<span>نمونه‌کاری برای این دسته ثبت نشده است.</span></div>`;
+        return;
+      }
+      grid.innerHTML = items.map((item, index) => {
+        const member = getMember(item.memberId);
+        const category = getCategory(item.category);
+        const totalWorks = getMemberWorks(member).length;
+        const moreCount = totalWorks - 1;
+        return `
+          <article class="portfolio-card glass" data-reveal data-glass style="--d:${(index % 3) * 0.07}s">
+            <div class="portfolio-media">${mediaBox(item.src, item.title, "portfolio-image", "lazy", "تصویر نمونه‌کار پس از قرارگیری Asset نمایش داده می‌شود.")}</div>
+            <div class="portfolio-body">
+              <div class="meta-line">
+                <span class="tag">${icon(category.icon, "sm")} ${escapeHTML(category.title)}</span>
+                <span>${escapeHTML(member.name)}</span>
+              </div>
+              <h3>${escapeHTML(item.title)}</h3>
+              <p>سازنده: ${escapeHTML(member.name)} · <span style="direction:ltr">${escapeHTML(member.username)}</span></p>
+              <div class="portfolio-actions">
+                <button class="button primary" type="button" data-open-work="${escapeHTML(item.id)}">${icon("external", "sm")}مشاهده</button>
+                <button class="button glass-btn" type="button" data-order-member="${escapeHTML(member.id)}">سفارش</button>
+              </div>
+              ${moreCount > 0 ? `
+                <button class="button tint sm" type="button" data-open-member="${escapeHTML(member.id)}" aria-label="مشاهده همهٔ ${toFaNumber(totalWorks)} نمونه‌کار ${escapeHTML(member.name)} در پروفایل">
+                  ${icon("layers", "sm")}${toFaNumber(totalWorks)} نمونه‌کار در پروفایل ${escapeHTML(member.name)}
+                </button>
+              ` : ""}
+            </div>
+          </article>
+        `;
+      }).join('');
+      enhanceImages(grid);
+      observeReveals(grid);
+    }
+
+    /* ---------------- Videos ---------------- */
+    function videoCardMarkup(video, member) {
+      return `
+        <div class="video-frame" data-video-frame="${escapeHTML(video.id)}">
+          <video playsinline preload="metadata" poster="${escapeHTML(video.thumbnail)}" src="${escapeHTML(video.src)}" aria-label="${escapeHTML(video.title)}"></video>
+          <button class="video-big-play" type="button" aria-label="پخش ${escapeHTML(video.title)}" data-video-action="toggle">${icon("play")}</button>
+          <div class="video-controls" aria-label="کنترل‌های ویدئو">
+            <button class="video-control-btn" type="button" data-video-action="toggle" aria-label="پخش یا توقف">${icon("play")}</button>
+            <input class="video-progress" type="range" min="0" max="100" step="0.1" value="0" aria-label="نوار پیشرفت ویدئو">
+            <span class="time-pair"><span data-current>۰:۰۰</span> / <span data-duration>۰:۰۰</span></span>
+            <input class="volume-range" type="range" min="0" max="1" step="0.01" value="1" aria-label="صدای ویدئو">
+            <button class="video-control-btn" type="button" data-video-action="fullscreen" aria-label="تمام صفحه">${icon("fullscreen")}</button>
+          </div>
+          <div class="video-fallback">${icon("video")}<span>ویدئو پس از قرارگیری فایل MP4 در مسیر محلی قابل پخش است.</span></div>
+        </div>
+      `;
+    }
+
+    function renderVideos() {
+      const grid = $('#videoGrid');
+      const videoItems = getVideoItems();
+      if (!videoItems.length) {
+        grid.innerHTML = `<div class="empty-state">${icon("video")}<span>ویدئویی برای نمایش ثبت نشده است.</span></div>`;
+        return;
+      }
+      grid.innerHTML = videoItems.map((video, index) => {
+        const member = getMember(video.memberId);
+        return `
+          <article class="video-card glass" data-reveal data-glass style="--d:${(index % 3) * 0.08}s">
+            ${videoCardMarkup(video, member)}
+            <div class="video-title-row">
+              <div>
+                <h3>${escapeHTML(video.title)}</h3>
+                <span>${escapeHTML(member.name)} · <span style="direction:ltr">${escapeHTML(member.username)}</span></span>
+              </div>
+              <button class="button tint sm" type="button" data-order-member="${escapeHTML(member.id)}">سفارش</button>
+            </div>
+          </article>
+        `;
+      }).join('');
+      initVideoPlayers(grid);
+      observeReveals(grid);
+    }
+
+    function formatTime(seconds) {
+      if (!Number.isFinite(seconds) || seconds < 0) return toFaNumber("0:00");
+      const minutes = Math.floor(seconds / 60);
+      const sec = Math.floor(seconds % 60).toString().padStart(2, '0');
+      return toFaNumber(`${minutes}:${sec}`);
+    }
+
+    function paintRange(input) {
+      if (!input) return;
+      const min = Number(input.min) || 0;
+      const max = Number(input.max) || 100;
+      const value = Number(input.value);
+      const percent = max > min ? ((value - min) / (max - min)) * 100 : 0;
+      input.style.background = `linear-gradient(to right, #0A6EF7 0%, #37B6FF ${percent}%, rgba(10,40,90,0.13) ${percent}%)`;
+    }
+
+    function initVideoPlayers(scope = document) {
+      $$('.video-frame', scope).forEach(frame => {
+        if (frame.dataset.ready === "true") return;
+        frame.dataset.ready = "true";
+        const video = $('video', frame);
+        const toggleButtons = $$('[data-video-action="toggle"]', frame);
+        const fullscreenButton = $('[data-video-action="fullscreen"]', frame);
+        const progress = $('.video-progress', frame);
+        const volume = $('.volume-range', frame);
+        const current = $('[data-current]', frame);
+        const duration = $('[data-duration]', frame);
+
+        paintRange(progress);
+        paintRange(volume);
+
+        const updatePlayIcons = () => {
+          const iconName = video.paused ? 'play' : 'pause';
+          toggleButtons.forEach(button => button.innerHTML = icon(iconName));
+          frame.classList.toggle('is-playing', !video.paused);
+        };
+
+        const toggle = () => {
+          if (frame.classList.contains('is-error')) {
+            showToast('امکان پخش ویدئو وجود ندارد؛ مسیر فایل را بررسی کنید.', 'video');
+            return;
+          }
+          if (video.paused) video.play().catch(() => showToast('امکان پخش ویدئو وجود ندارد.', 'video'));
+          else video.pause();
+        };
+
+        toggleButtons.forEach(button => button.addEventListener('click', toggle));
+        video.addEventListener('click', toggle);
+        video.addEventListener('play', updatePlayIcons);
+        video.addEventListener('pause', updatePlayIcons);
+        video.addEventListener('loadedmetadata', () => { duration.textContent = formatTime(video.duration); });
+        video.addEventListener('timeupdate', () => {
+          const percent = video.duration ? (video.currentTime / video.duration) * 100 : 0;
+          progress.value = Number.isFinite(percent) ? String(percent) : "0";
+          current.textContent = formatTime(video.currentTime);
+          paintRange(progress);
+        });
+        video.addEventListener('error', () => frame.classList.add('is-error'));
+        progress.addEventListener('input', () => {
+          if (!video.duration) return;
+          video.currentTime = (Number(progress.value) / 100) * video.duration;
+          paintRange(progress);
+        });
+        volume.addEventListener('input', () => { video.volume = Number(volume.value); paintRange(volume); });
+        fullscreenButton.addEventListener('click', () => {
+          if (frame.requestFullscreen) frame.requestFullscreen();
+          else if (video.webkitEnterFullscreen) video.webkitEnterFullscreen();
+        });
+        updatePlayIcons();
+      });
+    }
+
+    /* ---------------- Tutorials ---------------- */
+    function renderTutorials() {
+      const grid = $('#tutorialGrid');
+      const tutorials = getTutorials();
+      if (!tutorials.length) {
+        grid.innerHTML = `<div class="empty-state">${icon("tutorial")}<span>آموزشی برای نمایش ثبت نشده است.</span></div>`;
+        return;
+      }
+      grid.innerHTML = tutorials.map((tutorial, index) => {
+        const category = getCategory(tutorial.category);
+        const hasUrl = Boolean(tutorial.url);
+        const action = hasUrl
+          ? `<a class="button primary sm" href="${escapeHTML(tutorial.url)}" target="_blank" rel="noopener noreferrer">${icon("external", "sm")}مشاهده آموزش</a>`
+          : `<span class="soon-pill">${icon("clock", "sm")}به‌زودی منتشر می‌شود</span>`;
+        return `
+          <article class="tutorial-card glass" data-reveal data-glass style="--d:${(index % 4) * 0.07}s">
+            <div class="tutorial-media">${mediaBox(tutorial.thumbnail, tutorial.title, "tutorial-thumb", "lazy", "Thumbnail آموزش پس از قرارگیری Asset نمایش داده می‌شود.")}</div>
+            <div class="tutorial-body">
+              <span class="tag">${icon(category.icon, "sm")} ${escapeHTML(category.title)}</span>
+              <h3>${escapeHTML(tutorial.title)}</h3>
+              <p>مدرس: ${escapeHTML(tutorial.teacher)}</p>
+              ${action}
+            </div>
+          </article>
+        `;
+      }).join('');
+      enhanceImages(grid);
+      observeReveals(grid);
+    }
+
+    /* ---------------- Layers ---------------- */
+    const openLayers = new Set();
+    const previousFocus = new Map();
+
+    function openLayer(id) {
+      const layer = typeof id === 'string' ? document.getElementById(id) : id;
+      if (!layer) return;
+      previousFocus.set(layer, document.activeElement);
+      layer.classList.add('is-open');
+      layer.inert = false;
+      layer.setAttribute('aria-hidden', 'false');
+      openLayers.add(layer);
+      document.body.classList.add('is-locked');
+      const focusTarget = layer.querySelector('input, button, a, [tabindex]:not([tabindex="-1"])');
+      if (focusTarget) setTimeout(() => focusTarget.focus({ preventScroll: true }), 80);
+    }
+
+    function closeLayer(id) {
+      const layer = typeof id === 'string' ? document.getElementById(id) : id;
+      if (!layer || !layer.classList.contains('is-open')) return;
+      layer.classList.remove('is-open');
+      layer.inert = true;
+      layer.setAttribute('aria-hidden', 'true');
+      openLayers.delete(layer);
+      if (!openLayers.size) document.body.classList.remove('is-locked');
+      const old = previousFocus.get(layer);
+      if (old && old.isConnected) old.focus({ preventScroll: true });
+    }
+
+    /* ---------------- Profile ---------------- */
+    function openMemberProfile(memberId) {
+      const member = getMember(memberId);
+      const category = getCategory(member.category);
+      /* 👈 همهٔ نمونه‌کارهای عضو (نه فقط اولی) در پروفایل نمایش داده می‌شوند */
+      const works = getMemberWorks(member);
+      const videos = getVideoItems().filter(item => item.memberId === member.id);
+      const profile = $('#profileContent');
+      profile.innerHTML = `
+        <div class="profile-hero">
+          ${mediaBox(getMemberPhoto(member), `تصویر ${member.name}`, "profile-photo", "eager", "تصویر عضو از مسیر محلی بارگذاری می‌شود.")}
+          <div>
+            <h2 id="profileSheetTitle">${escapeHTML(member.name)}</h2>
+            <p>${escapeHTML(member.role)} · ${escapeHTML(category.title)}</p>
+          </div>
+          <a class="member-username" style="justify-self:center" href="https://eitaa.com/${escapeHTML(member.username.replace(/^@/, ''))}" target="_blank" rel="noopener noreferrer">${icon("eitaa", "sm")}<span>${escapeHTML(member.username)}</span></a>
+          <div class="profile-actions">
+            <button class="button primary" type="button" data-order-member="${escapeHTML(member.id)}">${icon("order", "sm")}ثبت سفارش</button>
+            <a class="button glass-btn" href="https://eitaa.com/${escapeHTML(member.username.replace(/^@/, ''))}" target="_blank" rel="noopener noreferrer">${icon("external", "sm")}مشاهده ایتا</a>
+          </div>
+        </div>
+        <div class="profile-section">
+          <h3>${icon("image", "sm")} نمونه‌کارهای ${escapeHTML(member.name)} ${works.length ? `<span class="tag neutral">${toFaNumber(works.length)} کار</span>` : ""}</h3>
+          ${works.length ? `<div class="mini-grid">${works.map(work => `
+            <button class="mini-work" type="button" data-open-work="${escapeHTML(work.id)}" data-work-member-list="${escapeHTML(member.id)}">
+              ${mediaBox(work.src, work.title, "", "lazy", "تصویر نمونه‌کار پس از قرارگیری Asset نمایش داده می‌شود.")}
+              <strong>${escapeHTML(work.title)}</strong>
+            </button>
+          `).join('')}</div>` : `<div class="empty-state">${icon("image")}<span>برای این عضو هنوز نمونه‌کار تصویری ثبت نشده است.</span></div>`}
+        </div>
+        <div class="profile-section">
+          <h3>${icon("video", "sm")} ویدئوهای ${escapeHTML(member.name)}</h3>
+          ${videos.length ? `<div class="video-grid">${videos.map(video => `
+            <article class="video-card glass">
+              ${videoCardMarkup(video, member)}
+              <div class="video-title-row"><div><h3>${escapeHTML(video.title)}</h3><span>${escapeHTML(member.name)}</span></div></div>
+            </article>
+          `).join('')}</div>` : `<div class="empty-state">${icon("video")}<span>ویدئویی برای این عضو ثبت نشده است.</span></div>`}
+        </div>
+      `;
+      enhanceImages(profile);
+      initVideoPlayers(profile);
+      openLayer('profileSheet');
+    }
+
+    /* ---------------- Order ---------------- */
+    function orderForMember(memberId) {
+      const member = getMember(memberId);
+      const message = `سلام، برای ثبت سفارش از طرف تیم آرتیوا پیام می‌دهم.\nمی‌خواهم برای ${member.username} (${member.name}) سفارش ثبت کنم.`;
+      copyText(message).then(ok => showToast(
+        ok ? 'متن سفارش کپی شد؛ در ایتا پیام را ارسال کنید.' : 'متن کپی نشد؛ آیدی عضو را دستی برای ادمین بفرستید.',
+        ok ? 'check' : 'copy'
+      ));
+      const opened = window.open(siteConfig.admin.url, '_blank', 'noopener,noreferrer');
+      if (!opened) window.location.href = siteConfig.admin.url;
+    }
+
+    /* ---------------- Viewer ---------------- */
+    let currentViewerList = [];
+    let currentViewerIndex = 0;
+
+    function openPortfolioViewer(workId, preferredList) {
+      const list = preferredList && preferredList.length ? preferredList : getVisiblePortfolioItems();
+      const index = Math.max(0, list.findIndex(item => item.id === workId));
+      currentViewerList = list;
+      currentViewerIndex = index;
+      renderViewer();
+      openLayer('portfolioViewer');
+    }
+
+    function renderViewer() {
+      if (!currentViewerList.length) return;
+      const item = currentViewerList[currentViewerIndex] || currentViewerList[0];
+      const member = getMember(item.memberId);
+      const category = getCategory(item.category);
+      $('#viewerTitle').textContent = item.title;
+      $('#viewerSubtitle').textContent = `${toFaNumber(currentViewerIndex + 1)} از ${toFaNumber(currentViewerList.length)} · ${member.name}`;
+      $('#viewerInfo').innerHTML = `
+        <span class="tag">${icon(category.icon, "sm")} ${escapeHTML(category.title)}</span>
+        <span class="tag">${icon("user", "sm")} ${escapeHTML(member.name)}</span>
+        <a class="tag" href="https://eitaa.com/${escapeHTML(member.username.replace(/^@/, ''))}" target="_blank" rel="noopener noreferrer">${icon("eitaa", "sm")} ${escapeHTML(member.username)}</a>
+      `;
+      const imageBox = $('#viewerImageBox');
+      const image = $('#viewerImage');
+      imageBox.classList.remove('is-error', 'is-loaded');
+      image.src = item.src;
+      image.alt = item.title;
+      $('#orderWork').dataset.orderMember = member.id;
+      enhanceImages(imageBox);
+    }
+
+    function showViewerNext() {
+      if (!currentViewerList.length) return;
+      currentViewerIndex = (currentViewerIndex + 1) % currentViewerList.length;
+      renderViewer();
+    }
+    function showViewerPrev() {
+      if (!currentViewerList.length) return;
+      currentViewerIndex = (currentViewerIndex - 1 + currentViewerList.length) % currentViewerList.length;
+      renderViewer();
+    }
+
+    /* ---------------- Global search ---------------- */
+    function renderGlobalSearch(query = "") {
+      const results = $('#globalSearchResults');
+      const normalized = normalizeText(query);
+      if (!normalized) {
+        results.innerHTML = `
+          <div class="empty-state">${icon("search")}<span>نام عضو، آیدی یا تخصص را جستجو کنید.</span></div>
+          <div class="quick-chips">
+            ${["گرافیک", "تدوین", "هوش مصنوعی", "مذهبی", "Ekrano", "Ali Grapph"].map(term => `<button type="button" data-quick-search="${escapeHTML(term)}">${escapeHTML(term)}</button>`).join('')}
+          </div>`;
+        return;
+      }
+      const matchedMembers = teamMembers.filter(member => normalizeText(`${member.name} ${member.username} ${member.role} ${getCategory(member.category).title}`).includes(normalized));
+      /* 🔎 جستجو روی همهٔ کارها انجام می‌شود (نه فقط کار اول هر عضو) */
+      const matchedWorks = getAllPortfolioItems().filter(item => normalizeText(`${item.title} ${getMember(item.memberId).name} ${getCategory(item.category).title}`).includes(normalized));
+      const cards = [
+        ...matchedMembers.slice(0, 6).map(member => ({ type: 'member', id: member.id, title: member.name, subtitle: `${member.role} · ${member.username}`, icon: 'user' })),
+        ...matchedWorks.slice(0, 4).map(work => ({ type: 'work', id: work.id, title: work.title, subtitle: `${getMember(work.memberId).name} · ${getCategory(work.category).title}`, icon: 'image' }))
+      ];
+      if (!cards.length) {
+        results.innerHTML = `<div class="empty-state">${icon("search")}<span>نتیجه‌ای پیدا نشد. عبارت دیگری را امتحان کنید.</span></div>`;
+        return;
+      }
+      results.innerHTML = cards.map(card => `
+        <button class="result-card" type="button" data-search-${card.type}="${escapeHTML(card.id)}">
+          <span class="round-icon">${icon(card.icon)}</span>
+          <span><strong>${escapeHTML(card.title)}</strong><span>${escapeHTML(card.subtitle)}</span></span>
+          ${icon("chevron")}
+        </button>
+      `).join('');
+    }
+
+    /* ---------------- Navigation state ---------------- */
+    function initNavigationObserver() {
+      const navLinks = $$('[data-nav]');
+      const map = new Map();
+      navLinks.forEach(link => {
+        if (!map.has(link.dataset.nav)) map.set(link.dataset.nav, []);
+        map.get(link.dataset.nav).push(link);
+      });
+      const sections = ['home', 'team', 'portfolio', 'videos', 'tutorials', 'order'].map(id => document.getElementById(id)).filter(Boolean);
+
+      const setActive = id => {
+        navLinks.forEach(link => link.classList.remove('is-active'));
+        (map.get(id) || []).forEach(link => link.classList.add('is-active'));
+      };
+
+      if (!('IntersectionObserver' in window)) return;
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
+      }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+      sections.forEach(section => observer.observe(section));
+    }
+
+    function initDockFeedback() {
+      $$('#bottomNav a').forEach(link => {
+        link.addEventListener('click', () => {
+          link.classList.remove('is-pop');
+          void link.offsetWidth;
+          link.classList.add('is-pop');
+        });
+      });
+    }
+
+    /* ---------------- Chrome: header / progress / FAB ---------------- */
+    function initChrome() {
+      const header = $('#appHeader');
+      const bar = $('#scrollBar');
+      const fab = $('#backToTop');
+      let ticking = false;
+
+      const update = () => {
+        const y = window.scrollY || 0;
+        header.classList.toggle('is-scrolled', y > 18);
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = `${max > 0 ? Math.min(100, (y / max) * 100) : 0}%`;
+        fab.classList.toggle('is-visible', y > 460);
+        ticking = false;
+      };
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+      update();
+
+      fab.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduceMotion() ? 'auto' : 'smooth' }));
+    }
+
+    /* ---------------- Liquid glass pointer tracking ---------------- */
+    function initGlassPointer() {
+      if (reduceMotion() || matchMedia('(hover: none)').matches) return;
+      let frame = null;
+      document.addEventListener('pointermove', event => {
+        const target = event.target.closest ? event.target.closest('.glass, .order-card-main') : null;
+        if (!target) return;
+        if (frame) return;
+        frame = requestAnimationFrame(() => {
+          const rect = target.getBoundingClientRect();
+          target.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+          target.style.setProperty('--my', `${event.clientY - rect.top}px`);
+          frame = null;
+        });
+      }, { passive: true });
+    }
+
+    function initHeroTilt() {
+      const logo = $('#heroLogo');
+      const stage = $('.hero-stage');
+      if (!logo || !stage || reduceMotion() || matchMedia('(hover: none)').matches) return;
+      stage.addEventListener('pointermove', event => {
+        const rect = stage.getBoundingClientRect();
+        const rx = ((event.clientY - rect.top) / rect.height - .5) * -12;
+        const ry = ((event.clientX - rect.left) / rect.width - .5) * 12;
+        logo.style.transform = `perspective(600px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      });
+      stage.addEventListener('pointerleave', () => { logo.style.transform = ''; });
+    }
+
+    /* ---------------- Sheet drag to dismiss ---------------- */
+    function initSheetDrag() {
+      $$('.bottom-sheet').forEach(sheet => {
+        const handle = $('.sheet-handle', sheet);
+        if (!handle) return;
+        let startY = 0, delta = 0, dragging = false;
+
+        const onDown = event => {
+          dragging = true;
+          startY = event.clientY;
+          sheet.classList.add('is-dragging');
+          handle.setPointerCapture?.(event.pointerId);
+        };
+        const onMove = event => {
+          if (!dragging) return;
+          delta = Math.max(0, event.clientY - startY);
+          sheet.style.transform = `translateY(${delta}px)`;
+        };
+        const onUp = () => {
+          if (!dragging) return;
+          dragging = false;
+          sheet.classList.remove('is-dragging');
+          sheet.style.transform = '';
+          if (delta > 90) {
+            const layer = sheet.closest('.sheet-overlay');
+            if (layer) closeLayer(layer);
+          }
+          delta = 0;
+        };
+
+        handle.addEventListener('pointerdown', onDown);
+        handle.addEventListener('pointermove', onMove);
+        handle.addEventListener('pointerup', onUp);
+        handle.addEventListener('pointercancel', onUp);
+      });
+    }
+
+    /* ---------------- Viewer swipe ---------------- */
+    function initViewerSwipe() {
+      const stage = $('#viewerStage');
+      if (!stage) return;
+      let startX = 0, tracking = false;
+      stage.addEventListener('pointerdown', event => {
+        if (event.target.closest('button')) return;
+        tracking = true; startX = event.clientX;
+      });
+      stage.addEventListener('pointerup', event => {
+        if (!tracking) return;
+        tracking = false;
+        const dx = event.clientX - startX;
+        if (Math.abs(dx) < 50) return;
+        dx < 0 ? showViewerNext() : showViewerPrev();
+      });
+    }
+
+    /* ---------------- Order form ---------------- */
+    function initOrderForm() {
+      const form = $('#orderForm');
+      const select = $('#orderMemberSelect');
+      if (!form) return;
+
+      select.innerHTML = `<option value="">فرقی نمی‌کند</option>` +
+        teamMembers.map(member => `<option value="${escapeHTML(member.username)}">${escapeHTML(member.name)} — ${escapeHTML(member.username)}</option>`).join('');
+
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const name = String(data.get('name') || '').trim();
+        const service = String(data.get('service') || '').trim();
+        const member = String(data.get('member') || '').trim();
+        const desc = String(data.get('desc') || '').trim();
+
+        const lines = [
+          `سلام تیم آرتیوا، درخواست سفارش دارم.`,
+          name ? `نام: ${name}` : null,
+          service ? `نوع خدمات: ${service}` : null,
+          member ? `عضو مورد نظر: ${member}` : null,
+          desc ? `توضیحات:\n${desc}` : null
+        ].filter(Boolean);
+
+        copyText(lines.join('\n')).then(ok => {
+          showToast(ok ? 'متن سفارش کپی شد؛ در ایتا برای ادمین بفرستید.' : 'کپی انجام نشد؛ متن را دستی ارسال کنید.', ok ? 'check' : 'copy');
+          const opened = window.open(siteConfig.admin.url, '_blank', 'noopener,noreferrer');
+          if (!opened) window.location.href = siteConfig.admin.url;
+        });
+      });
+    }
+
+    /* ---------------- Events ---------------- */
+    function openSearchSheet() {
+      renderGlobalSearch($('#globalSearch').value);
+      openLayer('searchSheet');
+    }
+
+    function initEvents() {
+      $('#openSearch').addEventListener('click', openSearchSheet);
+      $('#heroSearch').addEventListener('click', openSearchSheet);
+      $('#openSearch2').addEventListener('click', openSearchSheet);
+
+      $('#globalSearch').addEventListener('input', event => renderGlobalSearch(event.target.value));
+
+      const teamSearch = $('#teamSearch');
+      const teamClear = $('#teamSearchClear');
+      teamSearch.addEventListener('input', event => {
+        teamSearchQuery = event.target.value;
+        teamClear.hidden = !teamSearchQuery;
+        renderTeam();
+      });
+      teamClear.addEventListener('click', () => {
+        teamSearch.value = "";
+        teamSearchQuery = "";
+        teamClear.hidden = true;
+        renderTeam();
+        teamSearch.focus();
+      });
+
+      $('#copyAdmin').addEventListener('click', () => {
+        copyText(siteConfig.admin.username).then(ok =>
+          showToast(ok ? 'آیدی ادمین کپی شد.' : 'کپی آیدی انجام نشد.', ok ? 'check' : 'copy')
+        );
+      });
+
+      document.addEventListener('click', event => {
+        const closeButton = event.target.closest('[data-close-layer]');
+        if (closeButton) closeLayer(closeButton.dataset.closeLayer);
+
+        const categoryButton = event.target.closest('[data-select-category]');
+        if (categoryButton) setTeamCategory(categoryButton.dataset.selectCategory, true);
+
+        const teamFilter = event.target.closest('[data-team-filter]');
+        if (teamFilter) setTeamCategory(teamFilter.dataset.teamFilter, false);
+
+        const portfolioFilter = event.target.closest('[data-portfolio-filter]');
+        if (portfolioFilter) {
+          activePortfolioCategory = portfolioFilter.dataset.portfolioFilter;
+          renderPortfolio();
+        }
+
+        const memberButton = event.target.closest('[data-open-member]');
+        if (memberButton) openMemberProfile(memberButton.dataset.openMember);
+
+        const orderButton = event.target.closest('[data-order-member]');
+        if (orderButton) orderForMember(orderButton.dataset.orderMember);
+
+        const workButton = event.target.closest('[data-open-work]');
+        if (workButton) {
+          const memberList = workButton.dataset.workMemberList;
+          const list = memberList
+            ? getPortfolioItems().filter(item => item.memberId === memberList)
+            : getVisiblePortfolioItems();
+          openPortfolioViewer(workButton.dataset.openWork, list);
+        }
+
+        const searchMember = event.target.closest('[data-search-member]');
+        if (searchMember) { closeLayer('searchSheet'); openMemberProfile(searchMember.dataset.searchMember); }
+
+        const searchWork = event.target.closest('[data-search-work]');
+        if (searchWork) {
+          closeLayer('searchSheet');
+          /* وقتی از جستجو باز می‌شود، همهٔ کارها در ویوئر قابل مرور هستند */
+          openPortfolioViewer(searchWork.dataset.searchWork, getAllPortfolioItems());
+        }
+
+        const quick = event.target.closest('[data-quick-search]');
+        if (quick) {
+          const input = $('#globalSearch');
+          input.value = quick.dataset.quickSearch;
+          renderGlobalSearch(input.value);
+          input.focus();
+        }
+      });
+
+      $$('.sheet-overlay').forEach(layer => {
+        layer.addEventListener('click', event => { if (event.target === layer) closeLayer(layer); });
+      });
+
+      $('#viewerNext').addEventListener('click', showViewerNext);
+      $('#viewerPrev').addEventListener('click', showViewerPrev);
+      $('#orderWork').addEventListener('click', event => orderForMember(event.currentTarget.dataset.orderMember));
+      $('#shareWork').addEventListener('click', async () => {
+        const item = currentViewerList[currentViewerIndex];
+        const shareData = {
+          title: item ? item.title : 'آرتیوا',
+          text: item ? `${item.title} در آرتیوا` : 'تیم خلاق آرتیوا',
+          url: `${location.href.split('#')[0]}#portfolio`
+        };
+        if (navigator.share) {
+          try { await navigator.share(shareData); } catch (_) { /* user cancelled */ }
+        } else {
+          const ok = await copyText(shareData.url);
+          showToast(ok ? 'لینک نمونه‌کار کپی شد.' : 'کپی لینک انجام نشد.', ok ? 'check' : 'copy');
+        }
+      });
+
+      document.addEventListener('keydown', event => {
+        const active = document.activeElement;
+        const typing = !!active && /^(INPUT|TEXTAREA|SELECT)$/.test(active.tagName);
+
+        if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+          event.preventDefault();
+          openLayers.has($('#searchSheet')) ? closeLayer('searchSheet') : openSearchSheet();
+          return;
+        }
+        if (event.key === '/' && !typing && !openLayers.size) {
+          event.preventDefault();
+          openSearchSheet();
+          return;
+        }
+        if (event.key === 'Escape') {
+          Array.from(openLayers).reverse().forEach(layer => closeLayer(layer));
+        }
+        if ($('#portfolioViewer').classList.contains('is-open')) {
+          if (event.key === 'ArrowLeft') showViewerNext();
+          if (event.key === 'ArrowRight') showViewerPrev();
+        }
+      });
+    }
+
+    function initBadges() {
+      const teamBadge = $('[data-badge="team"]');
+      const portfolioBadge = $('[data-badge="portfolio"]');
+      if (teamBadge) { teamBadge.textContent = toFaNumber(teamMembers.length); teamBadge.hidden = false; }
+      /* تعداد کارهای بخش نمونه‌کارها = یک کار از هر عضو */
+      if (portfolioBadge) { portfolioBadge.textContent = toFaNumber(getPortfolioItems().length); portfolioBadge.hidden = false; }
+    }
+
+    function initLogoConfig() {
+      $$('.js-logo').forEach(img => { img.src = siteConfig.logo; });
+      const adminText = $('#adminIdText');
+      if (adminText) adminText.textContent = siteConfig.admin.username;
+    }
+
+    function hideSplash() {
+      const splash = $('#splash');
+      if (splash && !splash.classList.contains('is-hidden')) {
+        splash.classList.add('is-hidden');
+        document.body.classList.add('is-loaded');
+        initCounters();
+      }
+    }
+
+    function init() {
+      initLogoConfig();
+      initBadges();
+      renderCategories();
+      renderTeam();
+      renderPortfolio();
+      renderVideos();
+      renderTutorials();
+      renderGlobalSearch('');
+      enhanceImages(document);
+      initEvents();
+      initNavigationObserver();
+      initDockFeedback();
+      initChrome();
+      initGlassPointer();
+      initHeroTilt();
+      initSheetDrag();
+      initViewerSwipe();
+      initOrderForm();
+      observeReveals(document);
+      setTimeout(hideSplash, 1150);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+    window.addEventListener('load', () => setTimeout(hideSplash, 250));
+  </script>
+</body>
+</html>
