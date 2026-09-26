@@ -653,6 +653,8 @@
       font-variant-numeric: tabular-nums;
     }
     .metric span { font-size: 11.5px; color: var(--text-3); }
+    .metric strong.metric-infinity { display: flex; align-items: center; justify-content: center; }
+    .metric strong.metric-infinity .icon { width: 1.5em; height: 1.5em; stroke-width: 2.4; }
 
     .hero-note {
       display: inline-flex; align-items: center; gap: 7px;
@@ -1145,6 +1147,7 @@
       font-size: 9.5px; font-weight: 700;
       box-shadow: 0 2px 6px rgba(0, 80, 196, .35), 0 0 0 2px rgba(255, 255, 255, .9);
     }
+    .dock .badge .icon { width: 10px; height: 10px; stroke-width: 3; font-size: 10px; }
 
     .fab {
       position: fixed;
@@ -1441,6 +1444,7 @@
     <symbol id="icon-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></symbol>
     <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
     <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/><path d="m3 17 9 5 9-5"/></symbol>
+    <symbol id="icon-infinity" viewBox="0 0 24 24"><path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.739-8z"/></symbol>
   </svg>
 
   <div class="bg-fx" aria-hidden="true">
@@ -1536,7 +1540,7 @@
         <div class="hero-metrics" role="group" data-hero style="--d:.46s" aria-label="آمار تیم آرتیوا">
           <div class="metric"><strong data-count="12">۱۲</strong><span>عضو فعال</span></div>
           <div class="metric"><strong data-count="4">۴</strong><span>تخصص اصلی</span></div>
-          <div class="metric"><strong data-count="12">۱۲</strong><span>نمونه‌کار</span></div>
+          <div class="metric"><strong class="metric-infinity"><svg class="icon" aria-hidden="true"><use href="#icon-infinity"></use></svg><span class="sr-only">بی‌نهایت</span></strong><span>نمونه‌کار</span></div>
         </div>
 
         <p class="hero-note" data-hero style="--d:.52s">
@@ -1940,9 +1944,9 @@
         tutorial: { title: "آموزش طراحی گرافیک در آرتیوا", thumb: "tutorial.webp", url: "" }
       },
       {
-        id: "emmograph", name: "Emmograph", username: "@Admin_Emmograph1",
+        id: "zh-graphic", name: "ZH Graphic", username: "@ZH_graphic",
         role: "طراح گرافیک", category: "graphic",
-        folder: "assets/emmograph/",
+        folder: "assets/zh-graphic/",
         photo: "photo.webp",
         works: ["work-001.webp"],
         video: null,
@@ -3003,8 +3007,8 @@
       const teamBadge = $('[data-badge="team"]');
       const portfolioBadge = $('[data-badge="portfolio"]');
       if (teamBadge) { teamBadge.textContent = toFaNumber(teamMembers.length); teamBadge.hidden = false; }
-      /* تعداد کارهای بخش نمونه‌کارها = یک کار از هر عضو */
-      if (portfolioBadge) { portfolioBadge.textContent = toFaNumber(getPortfolioItems().length); portfolioBadge.hidden = false; }
+      /* نمونه‌کارها نامحدودند؛ به‌جای شمارش، آیکون بی‌نهایت نمایش داده می‌شود */
+      if (portfolioBadge) { portfolioBadge.innerHTML = icon("infinity", "sm"); portfolioBadge.hidden = false; }
     }
 
     function initLogoConfig() {
